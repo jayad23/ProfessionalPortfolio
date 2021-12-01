@@ -1,0 +1,86 @@
+.container-about {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.bg-about {
+    width: 100%;
+    height: 140%;
+}
+
+.bg-about > img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-subContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    position: fixed;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.text-about{
+    background-image: -webkit-linear-gradient(rgba(48, 43, 43, 0.603), rgba(0, 0, 0, 0.63));
+    width: 40%;
+}
+
+.text-about > h2 {
+    margin: 2rem;
+    font-size: 3rem;
+    color: #31081f;
+}
+.text-about > h2:hover{
+    color: #a1085f;
+}
+
+.text-about > p {
+    margin: 2rem;
+    font-size: 1.23rem;
+    color: #e1e2e4;
+}
+
+.history-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.history-container > a{
+    text-decoration: none;
+    background-color: #31081f;
+    color: #a1085f;
+    width: 11rem;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    text-decoration: none;
+    border-radius: 0.2rem;
+    color: #31081f;
+}
+
+.back > i{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .back > i {
+      background-color: lightgreen;
+    }
+  }
