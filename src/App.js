@@ -12,6 +12,7 @@ import About from "./Views/About";
 
 //Provider
 import { ProfesionalProvider } from "./Context/ProfesionalInfoContext";
+import Academic from "./Views/Academic";
 
 function App() {
     
@@ -20,11 +21,8 @@ function App() {
       <ProfesionalProvider>
           <Routes>
             <Route path="/" exact element={<Home/>}/>
-          </Routes>
-          <Routes>
             <Route path="/about" exact element={<About/>}/>
-          </Routes>
-          <Routes>
+            <Route path="/academic" exact element={<Academic/>}/>
             <Route path="/workexperience" exact element={<WorkExperience/>}/>
           </Routes>
       </ProfesionalProvider>

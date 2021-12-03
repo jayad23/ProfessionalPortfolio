@@ -1,5 +1,16 @@
 import Self from '../imgs/self.jpg'
 import Kike from '../imgs/Kike.JPG'
+import Graduation from '../imgs/Graduation.jpg'
+import GraduationPop from '../imgs/GraduationPop.png'
+import BookOne from '../imgs/Book1.png'
+import BookTwo from '../imgs/Books2.png'
+import BookThree from '../imgs/Book3.png'
+import Text1T1 from '../imgs/TextH1B.png'
+import Text1T2 from '../imgs/TextH2W.png'
+import Text2T1 from '../imgs/TextV1B.png'
+import Text2T2 from '../imgs/TextV2W.png'
+import CV from '../imgs/CV.pdf'
+
 const text = 'Hello, Kike. I am interested in your work...'
 export const Data = {
     personal:
@@ -28,7 +39,17 @@ export const Data = {
     images: 
     {
         avatar: Self,
-        BGAbout: Kike
+        BGAbout: Kike,
+        Graduation: Graduation,
+        GraduationPop: GraduationPop,
+        BookOne: BookOne,
+        BookTwo: BookTwo,
+        BookThree: BookThree,
+        Text1T1: Text1T1,
+        Text1T2: Text1T2,
+        Text2T1: Text2T1,
+        Text2T2: Text2T2,
+        CV: CV
     },
     academic :
     {
