@@ -14,16 +14,45 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 1000;
 }
 
 .home-text {
-    background-image: linear-gradient(to bottom right, rgb(112, 109, 109), rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom right, rgba(82, 79, 79, 0.795), rgb(0, 0, 0));
     width: 50%;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+}
+
+.home-text > h3{
+    color: #B91646;
+    cursor:pointer; 
+    margin: 0;
+    font-size: 5rem;
+}
+
+.home-text>h4{
+    color: #160040;
+}
+
+.home-text>h4::before{
+    content:'I am Kike Vanegas';
+    color: #B91646;
+    position: absolute;
+    margin-left: 0.3%;
+}
+
+.home-text>p{
+    font-family: monospace;
+    font-size: 1.4rem;
+    color: rgb(156, 150, 150);
+    margin: 0;
+    height: 5%;
 }
 
 .home-social {
@@ -45,7 +74,7 @@
 
 .home-social > ul > li > a {
     text-decoration: none;
-    color: #492232;
+    color: #B91646;
     margin-top: 0.5rem;
     font-size: 1.3rem;
 }
@@ -80,4 +109,145 @@
 
 .home-social > ul > li > .fa-whatsapp:hover {
     color: #25D366;
+}
+
+@media screen and (max-width: 881px){
+    .home-text>h4::before{
+        margin-right: 19.5%;
+    }
+
+
+}
+
+@media screen and (max-width: 775px){
+    .home-text>h4::before{
+        margin-right: 18.5%;
+    }
+}
+
+@media screen and (max-width: 727px){
+    .home-text>h4::before{
+        margin-right: 17.5%;
+    }
+}
+
+@media screen and (max-width: 686px){
+    .home-text>h4::before{
+        margin-right: 16.5%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .home-text > p{
+        height: 20vh;
+    }
+
+    .container-home{
+        background-image: linear-gradient(to bottom right, rgba(82, 79, 79, 0.678), rgba(0, 0, 0, 0.637)), url(../imgs/self.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home-image{
+        display: none;
+    }
+
+    .container-home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-social{
+        width: 90%;
+        height: 60%;
+    }
+
+    .home-social>ul{
+        flex-direction: row;
+
+    }
+    
+    .home-text {
+        background-image: none;
+    }
+
+    .home-text>h4::before{
+        margin-right: 30.5%;
+    }
+}
+
+@media screen and (max-width: 614px){
+    .home-text>h4::before{
+        margin-right: 29.5%;
+    }
+}
+
+@media screen and (max-width: 584px){
+    .home-text>h4::before{
+        margin-right: 28.5%;
+    }
+}
+
+@media screen and (max-width: 556px){
+    .home-text>h4::before{
+        margin-right: 27.5%;
+    }
+}
+
+@media screen and (max-width: 531px){
+    .home-text>h4::before{
+        margin-right: 26.5%;
+    }
+}
+
+@media screen and (max-width: 508px){
+    .home-text>h4::before{
+        margin-right: 25.5%;
+    }
+}
+
+@media screen and (max-width: 488px){
+    .home-text>h4::before{
+        margin-right: 24.5%;
+    }
+}
+
+@media screen and (max-width: 471px){
+    .home-text>h4{
+        font-size: 2.5rem;
+    }
+    .home-text>h4::before{
+        font-size: 2.5rem;
+        margin-right: 27.5%;
+    }
+}
+
+@media screen and (max-width: 443px){
+    .home-text>h4::before{
+        margin-right: 26.5%;
+    }
+}
+
+@media screen and (max-width: 423px){
+    .home-text>h4::before{
+        margin-right: 25.5%;
+    }
+}
+
+@media screen and (max-width: 405px){
+    .home-text>h4::before{
+        margin-right: 24.5%;
+    }
+}
+
+@media screen and (max-width: 423px){
+    .home-text>h4::before{
+        display: none;
+    }
+
+    .home-text > h4{
+        color: #B91646;
+    }
 }

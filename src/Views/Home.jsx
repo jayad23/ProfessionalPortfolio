@@ -1,19 +1,73 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
+import { useNavigate } from 'react-router'
+import Typical from 'react-typical'
 import ProfesionaInfoContext from '../Context/ProfesionalInfoContext'
+
 import '../Styles/Home.css'
 
 const Home = () => {
+    const navigate = useNavigate()
     const { Data } = useContext(ProfesionaInfoContext)
+    const [ type, setType ] = useState(true)
+    const [ mount, setMount ] = useState(false)
     
+    const handleMount = ()=>{
+        setMount(!mount)
+        setType(!type)
+    }
+
     return (
         <div className="container-home">
             <div className='home-image'>
                 <img src={Data.images.avatar} alt="" />
             </div>
             <div className='home-text'>
-                <h3>Hello</h3>
-                <h3>I am</h3>
-                <h3>Kike</h3>
+                {
+                    mount ?
+                    <h3 onMouseLeave={handleMount}
+                        onClick={()=> navigate('/about')}
+                    >About</h3>
+                    :
+                    <h3 onMouseEnter={handleMount}>Hello</h3>
+                }
+                <h4>I am Kike Vanegas</h4>
+                {
+                    type ?
+                        <p>
+                            I am {' '}
+                            <Typical
+                                loop={Infinity}
+                                wrapper='b'
+                                steps={[
+                                    'a web developer 💻',
+                                        1000,
+                                    'into vivid colours 🍭',
+                                        1000,
+                                    'a talented guitar player 🎸',
+                                        1000,
+                                    'an avid reader 📚',
+                                        1000,
+                                    'into country music 🤠',
+                                        1000,
+                                    'after the red pill 💊',
+                                        1000,
+                                    'a father 👨‍👦',
+                                        1000,
+                                    'in love ❤️',
+                                        2000
+                                ]}
+                            />
+                       </p>
+                    :   <p> 
+                            <Typical
+                                wrapper='b'
+                                steps={[
+                                    'Welcome to my Website',
+                                    1000
+                                ]}
+                            />
+                        </p>
+                }  
             </div>
             <aside className='home-social'>
                 <ul>

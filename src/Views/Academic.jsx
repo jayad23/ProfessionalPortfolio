@@ -5,15 +5,11 @@ import '../Styles/Academic.css'
 
 const Academic = () => {
 
-    const [ offSet, setOffSet ] = useState(false)
     const [ change, setChange ] = useState(false)
     
     setTimeout(() => {
         setChange(!change)
     }, 1000);
-
-    const handleScroll = ()=> setOffSet(window.pageYOffset)
-    window.addEventListener('scroll', handleScroll)
 
     const { Data } = useContext(ProfesionaInfoContext)
 
@@ -26,34 +22,34 @@ const Academic = () => {
                     <ul>
                         <div>
                             <span>
-                                <i className="fas fa-university"></i>
+                                <i className="fas fa-file-code"></i>
                             </span>
-                            <h4>FullStack Software Development</h4>
-                            <h6>2021</h6>
-                            <h6>2021</h6>
+                            <h4>{ Data.academic.programming.Degree }</h4>
+                            <h6>{ Data.academic.programming.institute }</h6>
+                            <h6>{ Data.academic.programming.yearOfCompletion }</h6>
+                        </div>
+                        <div>
+                            <span>
+                                <i className="fas fa-certificate"></i>
+                            </span>
+                            <h4>{ Data.academic.diploma.Degree }</h4>
+                            <h6>{ Data.academic.diploma.institute }</h6>
+                            <h6>{ Data.academic.diploma.yearOfCompletion }</h6>
                         </div>
                         <div>
                             <span>
                                 <i className="fas fa-university"></i>
                             </span>
-                            <h4>Diploma in Didactics of English</h4>
-                            <h6>2021</h6>
-                            <h6>2018</h6>
+                            <h4>{ Data.academic.bachelor.Degree }</h4>
+                            <h6>{ Data.academic.bachelor.institute }</h6>
+                            <h6>{ Data.academic.bachelor.yearOfCompletion }</h6>
                         </div>
                         <div>
                             <span>
-                                <i className="fas fa-university"></i>
-                            </span>
-                            <h4>Bachelor in Education in Theology</h4>
-                            <h6>2021</h6>
-                            <h6>2011</h6>
-                        </div>
-                        <div>
-                            <span>
-                                <i className="fas fa-university"></i>
+                                <i className="fas fa-globe"></i>
                             </span>
                             <h4>Teaching Knowledge Test (TKT)</h4>
-                            <h6>2021</h6>
+                            <h6>Cambridge University</h6>
                             <h6>2012</h6>
                         </div>
                     </ul>

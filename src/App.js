@@ -5,8 +5,8 @@ import './App.css';
 
 //Importations
 import Home from "./Views/Home";
-import WorkExperience from "./components/WorkExperience";
 import About from "./Views/About";
+import WorkHistory from "./Views/WorkHistory";
 
 //Layout
 
@@ -23,7 +23,7 @@ function App() {
             <Route path="/" exact element={<Home/>}/>
             <Route path="/about" exact element={<About/>}/>
             <Route path="/academic" exact element={<Academic/>}/>
-            <Route path="/workexperience" exact element={<WorkExperience/>}/>
+            <Route path="/workhistory" exact element={<WorkHistory/>}/>
           </Routes>
       </ProfesionalProvider>
     </BrowserRouter>

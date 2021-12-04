@@ -5,7 +5,6 @@ const ProfesionaInfoContext = createContext() //esto es el contexto
 
 const ProfesionalProvider = ({children}) => { //esto es el componente proveedor
     
-    
     const data = {
         Data
     }
