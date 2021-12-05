@@ -1,17 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import '../Styles/WorkHistory.css'
 
 const RenderCard = ({ name, stage, description, technologies, deployment, repo, display }) => {
     
+    const [ seeMore, setSeeMore ] = useState(false)
+
+    const handleSeeMore = ()=>{
+        setSeeMore(!seeMore)
+    }
+
     return (
         <div className="card">
             <img src={ display } alt="" />
-            <h3>{ name }</h3>
-            <h5>{ stage }</h5>
-            <h4>{ description }</h4>
-            <h5>{ technologies }</h5>
+            {
+                seeMore ? '' : <h3>{ name }</h3>
+            }
+            {
+                seeMore ? '' : <h5>{ stage }</h5>
+            }
+            {
+                seeMore ?
+                <p>
+                    { description }
+                    <i 
+                        onClick={handleSeeMore}
+                        className="fas fa-undo-alt cursor">    
+                    </i>
+                </p>
+                : <h4 onClick={handleSeeMore} className="cursor">See Info</h4>
+            }
+            {
+                seeMore ? '' : <h5>{ technologies }</h5>
+            }
             <div className="container-links">
-                <a href={ deployment }>Deploy</a>
-                <a href={ repo  }>github repositorie</a>
+                <a href={ deployment }>Deployment</a>
+                <a href={ repo  }>GitHub Repo</a>
             </div>
         </div>
     )

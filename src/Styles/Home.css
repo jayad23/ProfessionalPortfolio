@@ -3,7 +3,7 @@
     display: flex;
     height: 100vh;
     background-color: #060707;
-    
+    background-image: linear-gradient(to bottom right, rgba(82, 79, 79, 0.795), rgb(0, 0, 0));
 }
 
 .home-image{
@@ -18,7 +18,7 @@
 }
 
 .home-text {
-    background-image: linear-gradient(to bottom right, rgba(82, 79, 79, 0.795), rgb(0, 0, 0));
+   
     width: 50%;
     display: flex;
     justify-content: center;
@@ -51,13 +51,14 @@
     font-family: monospace;
     font-size: 1.4rem;
     color: rgb(156, 150, 150);
-    margin: 0;
+    margin-top: 8%;
     height: 5%;
 }
 
 .home-social {
     width: 10%;
     height: 100%;
+  
 }
 
 .home-social > ul {
@@ -139,6 +140,11 @@
 
 @media screen and (max-width: 650px) {
 
+    .home-text{
+        width: 100%;
+        margin-top: 25%;
+    }
+
     .home-text > p{
         height: 20vh;
     }
@@ -174,80 +180,19 @@
     }
 
     .home-text>h4::before{
-        margin-right: 30.5%;
-    }
-}
-
-@media screen and (max-width: 614px){
-    .home-text>h4::before{
-        margin-right: 29.5%;
-    }
-}
-
-@media screen and (max-width: 584px){
-    .home-text>h4::before{
-        margin-right: 28.5%;
-    }
-}
-
-@media screen and (max-width: 556px){
-    .home-text>h4::before{
-        margin-right: 27.5%;
-    }
-}
-
-@media screen and (max-width: 531px){
-    .home-text>h4::before{
-        margin-right: 26.5%;
-    }
-}
-
-@media screen and (max-width: 508px){
-    .home-text>h4::before{
-        margin-right: 25.5%;
-    }
-}
-
-@media screen and (max-width: 488px){
-    .home-text>h4::before{
-        margin-right: 24.5%;
+        margin-right: 0%;
     }
 }
 
 @media screen and (max-width: 471px){
     .home-text>h4{
+        margin-top: 10%;
         font-size: 2.5rem;
     }
-    .home-text>h4::before{
-        font-size: 2.5rem;
-        margin-right: 27.5%;
-    }
 }
 
-@media screen and (max-width: 443px){
-    .home-text>h4::before{
-        margin-right: 26.5%;
-    }
-}
-
-@media screen and (max-width: 423px){
-    .home-text>h4::before{
-        margin-right: 25.5%;
-    }
-}
-
-@media screen and (max-width: 405px){
-    .home-text>h4::before{
-        margin-right: 24.5%;
-    }
-}
-
-@media screen and (max-width: 423px){
-    .home-text>h4::before{
-        display: none;
-    }
-
-    .home-text > h4{
-        color: #B91646;
+@media screen and (max-width: 368px){
+    .home-text>h4{
+        font-size: 1.5rem;
     }
 }

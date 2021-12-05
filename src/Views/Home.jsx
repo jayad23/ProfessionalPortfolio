@@ -36,24 +36,25 @@ const Home = () => {
                         <p>
                             I am {' '}
                             <Typical
+                                className="text-iter"
                                 loop={Infinity}
                                 wrapper='b'
                                 steps={[
-                                    'a web developer 💻',
+                                    'a web developer',
                                         1000,
-                                    'into vivid colours 🍭',
+                                    'into vivid colours',
                                         1000,
-                                    'a talented guitar player 🎸',
+                                    'a talented guitar player',
                                         1000,
-                                    'an avid reader 📚',
+                                    'an avid reader',
                                         1000,
-                                    'into country music 🤠',
+                                    'into country music',
                                         1000,
-                                    'after the red pill 💊',
+                                    'after the red pill',
                                         1000,
-                                    'a father 👨‍👦',
+                                    'a father',
                                         1000,
-                                    'in love ❤️',
+                                    'in love',
                                         2000
                                 ]}
                             />

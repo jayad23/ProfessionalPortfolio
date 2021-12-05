@@ -98,20 +98,19 @@ export const Data = {
             },
             skills : 
             {
-                HTML5: true,
-                CSS: true,
-                JavaScript: true,
-                React: true,
-                libraries : {
-                    bootstrap: '',
-                    SASS: '',
-                    Tailwind: ''
+                HTML5: 90,
+                CSS: 90,
+                JavaScript: 50,
+                React: 90,
+                Angular: 0,
+                NodeJS: 0,
+                Python: 0,
+                MySQL: 0,
+                others : {
+                    bootstrap: 15,
+                    SASS: 50,
+                    Tailwind: 50
                 },
-                Angular: "",
-                NodeJS: "",
-                Python: "",
-                MySQL: "",
-
             }
         }
 
@@ -212,7 +211,7 @@ export const Data = {
             id: 7,
             name: 'E-Commerce',
             stage: 'Fluent',
-            description: 'This project is the apple of my eye. It defintely took me to higher level of comprehension on technologial tools, resources and methods to create a better user experience. Everything in this project was created from scratch',
+            description: 'This project is the apple of my eye. It defintely took me to a higher level of comprehension on technologial tools, resources and methods to create a better user experience. Everything in this project was created from scratch',
             technologies: 'REACT JS, REACT ROUTER V6, HOOKS, CONTEXT, REDUCER, CSS, FIREBASE, GITHUB, JS, DATABASE CONSTRUCTION',
             url1:'https://project-ecommercce-46cdhwtei-jayad23.vercel.app/',
             url2:'https://github.com/jayad23/projectEcommerce.git',

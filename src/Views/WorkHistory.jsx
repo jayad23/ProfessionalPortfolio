@@ -9,7 +9,7 @@ const WorkHistory = () => {
     const { Data } = useContext(ProfesionalInfoContext)
     return (
         <div className="container-history">
-            
+           <div className="container-cards">   
             {
                 Data?.workHistory?.map(value =>
                     <RenderCard
@@ -25,6 +25,8 @@ const WorkHistory = () => {
                     />
                 )
             }
+            <h1>Work History</h1> 
+           </div>
             <Link to="/about" className="back"><i class="fas fa-arrow-left"></i></Link>
         </div>
     )
