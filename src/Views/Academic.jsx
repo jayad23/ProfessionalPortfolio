@@ -14,49 +14,55 @@ const Academic = () => {
     const { Data } = useContext(ProfesionaInfoContext)
 
     return (
-        <div className="container-academic">
-            <div className="zoom">
-                <img src={ Data.images.GraduationPop } alt="" id="graduation"/>
-                <img src={Data.images.Text1T2} id="text-image"/>
+       
+            <div className="container-academic">
                 <div className='academic-information'>
                     <ul>
-                        <div>
+                        <div className='div-info'>
                             <span>
                                 <i className="fas fa-file-code"></i>
                             </span>
-                            <h4>{ Data.academic.programming.Degree }</h4>
-                            <h6>{ Data.academic.programming.institute }</h6>
-                            <h6>{ Data.academic.programming.yearOfCompletion }</h6>
+                            <article>
+                                <h4>{ Data.academic.programming.Degree }</h4>
+                                <h6>{ Data.academic.programming.institute }</h6>
+                                <h6>{ Data.academic.programming.yearOfCompletion }</h6>
+                            </article>
                         </div>
-                        <div>
+                        <div className='div-info'>
                             <span>
                                 <i className="fas fa-certificate"></i>
                             </span>
-                            <h4>{ Data.academic.diploma.Degree }</h4>
-                            <h6>{ Data.academic.diploma.institute }</h6>
-                            <h6>{ Data.academic.diploma.yearOfCompletion }</h6>
+                            <article>
+                                <h4>{ Data.academic.diploma.Degree }</h4>
+                                <h6>{ Data.academic.diploma.institute }</h6>
+                                <h6>{ Data.academic.diploma.yearOfCompletion }</h6>
+                            </article>
                         </div>
-                        <div>
+                        <div className='div-info'>
                             <span>
                                 <i className="fas fa-university"></i>
                             </span>
-                            <h4>{ Data.academic.bachelor.Degree }</h4>
-                            <h6>{ Data.academic.bachelor.institute }</h6>
-                            <h6>{ Data.academic.bachelor.yearOfCompletion }</h6>
+                            <article>
+                                <h4>{ Data.academic.bachelor.Degree }</h4>
+                                <h6>{ Data.academic.bachelor.institute }</h6>
+                                <h6>{ Data.academic.bachelor.yearOfCompletion }</h6>
+                            </article>
                         </div>
-                        <div>
+                        <div className='div-info'>
                             <span>
                                 <i className="fas fa-globe"></i>
                             </span>
-                            <h4>Teaching Knowledge Test (TKT)</h4>
-                            <h6>Cambridge University</h6>
-                            <h6>2012</h6>
+                            <article>
+                                <h4>Teaching Knowledge Test (TKT)</h4>
+                                <h6>Cambridge University</h6>
+                                <h6>2012</h6>
+                            </article>
                         </div>
                     </ul>
                 </div>
+                <Link to="/about" className={ change ? 'back' : 'black'}><i class="fas fa-arrow-left"></i></Link>
             </div>
-            <Link to="/about" className={ change ? 'back' : 'black'}><i class="fas fa-arrow-left"></i></Link>
-        </div>
+            
     )
 }
 

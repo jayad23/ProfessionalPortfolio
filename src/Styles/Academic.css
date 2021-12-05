@@ -1,108 +1,73 @@
-.zoom{
+.container-academic{
     width: 100%;
     height: 100vh;
-    position: relative;
-    z-index: 1000;
-    overflow: hidden;
-    background: url(../imgs/BGD.jpg);
+    background-image: url(../imgs/BackgroundAcademic.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#graduation{
-    position: absolute ;
-    width: 47%;
-    height: 100%;
-    bottom: 0;
-
-}
-
-#text-image{
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   width: 50%;
-   z-index: 100;
+.container-academic > a {
+    position: fixed;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    color: #db0a81;
+    font-weight: bolder;
+    font-size: 2.3rem;
 }
 
 .academic-information{
-    position: absolute;
-    right: 10%;
-    top: 7%;
-    color: #fff;
+    width: 100%;
     height: 100%;
-    
+    position: relative;
 }
 
 .academic-information > ul{
-    list-style: none;
+    position: absolute;
+    height: 30rem;
+    border-left: 0.2rem solid #fff;
+    right: 0%;
+    margin-top: 7%;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    border-left: 2px solid #fff;
-    position: relative;
-    height: 80vh; 
+    flex-direction: column;
 }
 
-.academic-information > ul > div > span {
-    position: absolute;
+.academic-information > ul > .div-info{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    left: -4.6%;
+
+}
+
+.academic-information > ul > .div-info > span{
     background-color: #fff;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: -4.5%;
 }
 
-.academic-information > ul > div > span > i {
-    color:  rgb(36, 2, 26);
-}
-
-.academic-information > ul > div > h4, h6{
-    padding: 0;
+.academic-information > ul > .div-info > article {
     margin-left: 7%;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
 }
 
-.back {
-    position: fixed;
-    right: 0.8rem;
-    bottom: 0.8rem;
-    color:  #fff;
-    font-weight: bolder;
-    font-size: 2.3rem;
-    z-index: 1000;
+@media screen and (max-width: 397px){
+    .academic-information > ul{
+        margin-top: 20%;
+    }
+
+    .academic-information > ul > .div-info > article{
+        margin-left: 10%;
+        font-size: 0.8rem;
+    }
+
+    .academic-information > ul > .div-info > span{
+        left: -6.5%;
+    }
 }
-
-.black {
-    position: fixed;
-    right: 0.8rem;
-    bottom: 0.8rem;
-    color:  rgb(46, 2, 35);
-    font-weight: bolder;
-    font-size: 2.3rem;
-    z-index: 1000;
-}
-
-@media screen and (max-width: 550px) {
-    
-    #graduation{
-        display: none;
-    }
-
-    .academic-information > ul > div > h4, h6{
-        font-size: 1rem;
-    }
-} 
-
-@media screen and (max-width: 377px) {
-    
-    .academic-information {
-        right: 0;
-    }
-} 
-
