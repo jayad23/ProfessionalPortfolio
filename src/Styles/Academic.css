@@ -98,50 +98,23 @@
     z-index: 1000;
 }
 
-@media screen and (max-width: 972px) {
-    #graduation{
-        width: 60%;    
-    }
-}
-
-@media screen and (max-width: 710px) {
-    #graduation{
-        display: none;    
-    }
-
-    .academic-information{
-        right: 20%;
-
-    }
-}
-
 @media screen and (max-width: 550px) {
     
+    #graduation{
+        display: none;
+    }
+
     .academic-information{
-        right: 13%;
-
+        right: 0;
     }
-}
 
-@media screen and (max-width: 498px) {
-    
-    .academic-information{
-        right: 0%;
-
-    }
-}
-
-@media screen and (max-width: 428px) {
-    
-    .academic-information > ul > div > h4, h6{
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 358px) {
-    
     .academic-information > ul > div > h4, h6{
         margin-left: 9%;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+
+    .academic-information > ul > div > span{
+        left: -6%;
     }
 }
+
