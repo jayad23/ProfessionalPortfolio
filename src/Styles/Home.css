@@ -191,7 +191,7 @@
     }
 }
 
-@media screen and (max-width: 368px){
+@media screen and (max-width: 375px){
     .home-text>h4{
         font-size: 1.5rem;
     }
