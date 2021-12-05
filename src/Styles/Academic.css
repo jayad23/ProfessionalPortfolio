@@ -97,7 +97,7 @@
     }
 
     .academic-information{
-        right: 0;
+        right: 10%;
     }
 
     .academic-information > ul > div > h4, h6{
@@ -105,3 +105,8 @@
     }
 } 
 
+@media screen and (max-width: 368px){
+    .academic-information{
+        right: -8%;
+    }
+}
