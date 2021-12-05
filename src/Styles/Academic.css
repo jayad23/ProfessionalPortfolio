@@ -9,8 +9,6 @@
     background-size: cover;
 }
 
-
-
 #graduation{
     position: absolute ;
     width: 47%;
@@ -29,8 +27,8 @@
 
 .academic-information{
     position: absolute;
-    right: 15%;
-    top: 3%;
+    right: 10%;
+    top: 7%;
     color: #fff;
     height: 100%;
     
@@ -96,11 +94,15 @@
         display: none;
     }
 
-    .academic-information{
-        right: 10%;
-    }
-
     .academic-information > ul > div > h4, h6{
         font-size: 1rem;
     }
 } 
+
+@media screen and (max-width: 377px) {
+    
+    .academic-information {
+        right: 0;
+    }
+} 
+
