@@ -132,6 +132,12 @@
     }
 }
 
+@media screen and (max-width: 685px){
+    .home-text>h4::before{
+        margin-right: 16.5%;
+    }
+}
+
 @media screen and (max-width: 667px){
     .home-text>h4::before{
         margin-right: 15.5%;
@@ -142,7 +148,6 @@
 
     .home-text{
         width: 100%;
-        margin-top: 25%;
     }
 
     .home-text > p{
