@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Loader from '../components/Loader'
 
 // Styles
 import '../Styles/WorkHistory.css'
@@ -14,7 +15,7 @@ const RenderCard = ({ name, stage, description, technologies, deployment, repo, 
     return (
         <div className="card">
             {
-                seeMore ? '' : <img src={ display } alt="" />
+                seeMore ? '' :  display ? <img src={ display } alt="" /> : <Loader/>
             }
             {
                 seeMore ? '' : <h3>{ name }</h3>
