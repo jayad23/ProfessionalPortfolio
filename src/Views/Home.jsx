@@ -19,8 +19,8 @@ const Home = () => {
     return (
         <div className="container-home">
             <div className='home-image'>
-                <img src={Data.images.avatar} alt="" />
-            </div>
+               <img src={Data.images.avatar} alt="" /> 
+            </div>  
             <div className='home-text'>
                 {
                     mount ?
@@ -34,27 +34,27 @@ const Home = () => {
                 {
                     type ?
                         <p>
-                            I am {' '}
+                           {' '}
                             <Typical
                                 className="text-iter"
                                 loop={Infinity}
                                 wrapper='b'
                                 steps={[
-                                    'a web developer',
+                                    'I am a web developer',
                                         1000,
-                                    'into vivid colours',
+                                    'I love vivid colours',
                                         1000,
-                                    'a talented guitar player',
+                                    'I am a talented guitar player',
                                         1000,
-                                    'an avid reader',
+                                    'My fav. Book is The River',
                                         1000,
-                                    'into country music',
+                                    'I enjoy country music',
                                         1000,
-                                    'after the red pill',
+                                    'I chose the red pill',
                                         1000,
-                                    'a father',
+                                    'I am a father',
                                         1000,
-                                    'in love',
+                                    'I am in love',
                                         2000
                                 ]}
                             />
