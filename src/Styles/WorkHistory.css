@@ -78,8 +78,9 @@
 }
 
 .card>p{
-    width: 95%;
-    font-size: 0.9rem;
+    width: 90%;
+    margin-top: 1rem;
+    font-size: 1rem;
 }
 
 .card > p > i{
