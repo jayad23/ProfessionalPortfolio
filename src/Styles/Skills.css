@@ -5,5 +5,79 @@
 }
 
 .skills-container > a {
-    color: black;
+    position: fixed;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    color: #db0a81;
+    font-weight: bolder;
+    font-size: 2.3rem;
+}
+
+.skills-container {
+    width: 30rem;
+    height: 1rem;
+    background-color: gray;
+    margin-top: 25%;
+    margin-left: 35%;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader-span{
+    width:100%;
+    height: 1rem;
+    margin-top:0%;
+    margin-left:0;
+    border-radius: 2rem;
+    position: absolute;
+    animation: loader 4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loader {
+    0%{
+        width: 0%;
+        background-color: blue;
+    }
+    10%{
+        width: 10%;
+        background-color: blue;
+    }
+    20%{
+        width: 20%;
+        background-color: blue;
+    }
+    30%{
+        width: 30%;
+        background-color: blue;
+    }
+    40%{
+        width: 40%;
+        background-color: blue;
+    }
+    50%{
+        width: 50%;
+        background-color: blue;
+    }
+    60%{
+        width: 60%;
+        background-color: blue;
+    }
+    70%{
+        width: 70%;
+        background-color: blue;
+    }
+    80%{
+        width: 80%;
+        background-color: blue;
+    }
+    90%{
+        width: 90%;
+        background-color: blue;
+    }
+    100%{
+        width: 100%;
+        background-color: blue;
+    }
 }
