@@ -29,14 +29,15 @@
 }
 
 .card{
-    width: 17%;
-    height: 300px;
+    width: 15%;
+    height: 20rem;
     margin-top: 2rem;
     -webkit-box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.24); 
     box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.24);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     margin-bottom: 30px;
@@ -46,30 +47,23 @@
     animation: float 7s linear infinite;
 }
 
-.card:nth-child(1){
+.card:nth-child(2){
     animation-delay: 1s;
 }
-.card:nth-child(2){
+.card:nth-child(3){
     animation-delay: 2s;
 }
-.card:nth-child(3){
+.card:nth-child(4){
     animation-delay: 3s;
 }
-.card:nth-child(4){
-    animation-delay: 4s;
-}
 .card:nth-child(5){
-    animation-delay: 5s;
+    animation-delay: 1s;
 }
 .card:nth-child(6){
-    animation-delay: 6s;
+    animation-delay: 2s;
 }
 .card:nth-child(7){
-    animation-delay: 7s;
-}
-
-.card:hover{
-    animation: none;
+    animation-delay: 3s;
 }
 
 .card>img{
@@ -122,6 +116,15 @@
     color: #EC255A;
 }
 
+.container-history > a {
+    position: fixed;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    color: #db0a81;
+    font-weight: bolder;
+    font-size: 2.3rem;
+}
+
 @keyframes float{
     0% {
         transform: rotate(
@@ -136,33 +139,34 @@
 @media screen and (max-width: 1138px) {
     
     .card{
-        width: 30%;
+        width: 18%;
+        margin-right: 2rem;
     }
 }
 
-@media screen and (max-width: 752px) {
-    .container-cards{
-        display: flex;
-        flex-direction: column;
-    }
+@media only screen and (max-width: 994px) {
+    .card{
+        width: 25%;
+    }    
+}
 
+@media only screen and (max-width: 724px) {
+    .card{
+        width: 33%;
+    }    
+}
+
+@media only screen and (max-width: 560px) {
     .card{
         width: 40%;
-    }
+    }    
 }
 
-@media screen and (max-width: 550px) {
+@media only screen and (max-width: 465px) {
     
     .card{
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 413px) {
+        width: 45%;
+        margin-right:0;
+    }    
     
-    
-
-    .card{
-        width: 80%;
-    }
 }

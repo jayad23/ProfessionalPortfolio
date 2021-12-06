@@ -34,10 +34,15 @@ const RenderCard = ({ name, stage, description, technologies, deployment, repo, 
             {
                 seeMore ? '' : <h5>{ technologies }</h5>
             }
-            <div className="container-links">
-                <a href={ deployment }>Deployment</a>
-                <a href={ repo  }>GitHub Repo</a>
-            </div>
+            {
+                seeMore ? 
+                '' 
+                :
+                <div className="container-links">
+                    <a href={ deployment }>Deployment</a>
+                    <a href={ repo  }>GitHub Repo</a>
+                </div> 
+            }
         </div>
     )
 }
