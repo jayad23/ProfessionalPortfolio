@@ -41,7 +41,6 @@
 @keyframes loader {
     0%{
         width: 0%;
-        
     }
     10%{
         width: 10%;

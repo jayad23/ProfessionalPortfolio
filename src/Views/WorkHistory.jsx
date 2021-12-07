@@ -12,7 +12,7 @@ const WorkHistory = () => {
 
     setTimeout(() => {
         setLoader(true)
-    }, 2000);
+    }, 4000);
 
     return (
         <div className="container-history">

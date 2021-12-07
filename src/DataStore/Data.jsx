@@ -100,12 +100,12 @@ export const Data = {
             {
                 HTML5: 90,
                 CSS: 90,
-                JavaScript: 50,
+                JavaScript: 60,
                 React: 90,
-                Angular: 0,
-                NodeJS: 0,
-                Python: 0,
-                MySQL: 0,
+                Angular: 10,
+                NodeJS: 1,
+                Python: 1,
+                MySQL: 1,
                 others : {
                     bootstrap: 15,
                     SASS: 50,

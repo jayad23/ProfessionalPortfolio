@@ -1,109 +1,170 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import PersonalInfoContext from '../Context/ProfesionalInfoContext'
 import '../Styles/Skills.css'
 
 const Skills = () => {
+
+    const { Data } = useContext(PersonalInfoContext)
+
+    const [hover1, setHover1] = useState(false)
+    const [hover2, setHover2] = useState(false)
+    const [hover3, setHover3] = useState(false)
+    const [hover4, setHover4] = useState(false)
+    const [hover5, setHover5] = useState(false)
+    const [hover6, setHover6] = useState(false)
+    const [hover7, setHover7] = useState(false)
+    const [hover8, setHover8] = useState(false)
+    const [hover9, setHover9] = useState(false)
+    
+    const handlerHover = (param)=>{
+        if(param === 1){
+            setHover1(!hover1)
+        }
+        else if(param === 2){
+            setHover2(!hover2)
+        }
+        else if(param === 3){
+            setHover3(!hover3)
+        }
+        else if(param === 4){
+            setHover4(!hover4)
+        }
+        else if(param === 5){
+            setHover5(!hover5)
+        }
+        else if(param === 6){
+            setHover6(!hover6)
+        }
+        else if(param === 7){
+            setHover7(!hover7)
+        }
+        else if(param === 8){
+            setHover8(!hover8)
+        }
+        else if(param === 9){
+            setHover9(!hover9)
+        }
+    }
+
     return (
         <div className="container-skills">
             <div className='square'>
-                <div className="square-row">
-                    <div className="row-icon">
-                        <i className="fab fa-react"></i>
+                    <div className="square-row">
+                        <div className="row-icon" onMouseEnter={()=>handlerHover(1)} onMouseLeave={()=>handlerHover(1)}>
+                            <i className="fab fa-react"></i>
+                        </div>
+                        <div className="loader-bar">
+                            <span className={hover1 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "10%"}}>
+                                
+                            </span>
+                        </div>
+                        <div className="text-percent">
+                            <h5>{Data.academic.programming.skills.React}%</h5>
+                        </div>          
                     </div>
-                    <div className="loader-bar">
-                        <span className='loader-effect'>
-
-                        </span>
-                        <h6>n%</h6>
+                    <div className="square-row">
+                        <div className="row-icon"  onMouseEnter={()=>handlerHover(2)} onMouseLeave={()=>handlerHover(2)}>
+                            <i className="fab fa-js"></i>
+                        </div>
+                        <div className="loader-bar">
+                            <span className={hover2 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "40%"}}>
+                                
+                            </span>
+                        </div>
+                        <div className="text-percent">
+                            <h5>{Data.academic.programming.skills.JavaScript}%</h5>
+                        </div>
                     </div>
-                </div>
-                <div className="square-row">
-                    <div className="row-icon">
-                        <i className="fab fa-js"></i>
+                    <div className="square-row">
+                        <div className="row-icon"  onMouseEnter={()=>handlerHover(3)} onMouseLeave={()=>handlerHover(3)}>
+                            <i className="fab fa-css3-alt"></i>
+                        </div>
+                        <div className="loader-bar">
+                            <span className={hover3 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "10%"}}>
+                                
+                            </span>
+                        </div>
+                        <div className="text-percent">
+                            <h5>{Data.academic.programming.skills.CSS}%</h5>
+                        </div>
                     </div>
-                    <div className="loader-bar">
-                        <span className='loader-effect'>
-
-                        </span>
-                        <h6>n%</h6>
+                    <div className="square-row">
+                        <div className="row-icon"  onMouseEnter={()=>handlerHover(4)} onMouseLeave={()=>handlerHover(4)}>
+                            <i className="fab fa-html5"></i>
+                        </div>
+                        <div className="loader-bar">
+                            <span className={hover4 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "10%"}}>
+                                
+                            </span>
+                        </div>
+                        <div className="text-percent">
+                            <h5>{Data.academic.programming.skills.HTML5}%</h5>
+                        </div>
                     </div>
-                </div>
-                <div className="square-row">
-                    <div className="row-icon">
-                        <i className="fab fa-css3-alt"></i>
+                    <div className="square-row">
+                        <div className="row-icon"  onMouseEnter={()=>handlerHover(5)} onMouseLeave={()=>handlerHover(5)}>
+                            <i className="fas fa-border-style"></i>
+                        </div>
+                        <div className="loader-bar">
+                            <span className={hover5 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "50%"}}>
+                                
+                            </span>
+                        </div>
+                        <div className="text-percent">
+                            <h5>{Data.academic.programming.skills.others.Tailwind}%</h5>
+                        </div>
                     </div>
-                    <div className="loader-bar">
-                        <span className='loader-effect'>
-
-                        </span>
-                        <h6>n%</h6>
+                    <div className="square-row">
+                        <div className="row-icon"  onMouseEnter={()=>handlerHover(6)} onMouseLeave={()=>handlerHover(6)}>
+                            <i className="fab fa-sass"></i>
+                        </div>
+                        <div className="loader-bar">
+                            <span className={hover6 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "50%"}}>
+                                
+                            </span>
+                        </div>
+                        <div className="text-percent">
+                            <h5>{Data.academic.programming.skills.others.SASS}%</h5>
+                        </div>
                     </div>
-                </div>
-                <div className="square-row">
-                    <div className="row-icon">
-                        <i className="fab fa-html5"></i>
+                    <div className="square-row">
+                        <div className="row-icon"  onMouseEnter={()=>handlerHover(7)} onMouseLeave={()=>handlerHover(7)}>
+                            <i className="fab fa-python"></i>
+                        </div>
+                        <div className="loader-bar">
+                            <span className={hover7 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "99%"}}>
+                                
+                            </span>
+                        </div>
+                        <div className="text-percent">
+                            <h5>0{Data.academic.programming.skills.Python}%</h5>
+                        </div>
                     </div>
-                    <div className="loader-bar">
-                        <span className='loader-effect'>
-
-                        </span>
-                        <h6>n%</h6>
+                    <div className="square-row">
+                        <div className="row-icon"  onMouseEnter={()=>handlerHover(8)} onMouseLeave={()=>handlerHover(8)}>
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div className="loader-bar">
+                            <span className={hover8 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "99%"}}>
+                            
+                            </span>
+                        </div>
+                        <div className="text-percent">
+                            <h5>0{Data.academic.programming.skills.NodeJS}%</h5>
+                        </div>
                     </div>
-                </div>
-                <div className="square-row">
-                    <div className="row-icon">
-                        <i className="fas fa-border-style"></i>
-                    </div>
-                    <div className="loader-bar">
-                        <span className='loader-effect'>
-
-                        </span>
-                        <h6>n%</h6>
-                    </div>
-                </div>
-                <div className="square-row">
-                    <div className="row-icon">
-                        <i className="fab fa-sass"></i>
-                    </div>
-                    <div className="loader-bar">
-                        <span className='loader-effect'>
-
-                        </span>
-                        <h6>n%</h6>
-                    </div>
-                </div>
-                <div className="square-row">
-                    <div className="row-icon">
-                        <i className="fab fa-python"></i>
-                    </div>
-                    <div className="loader-bar">
-                        <span className='loader-effect'>
-
-                        </span>
-                        <h6>n%</h6>
-                    </div>
-                </div>
-                <div className="square-row">
-                    <div className="row-icon">
-                        <i class="fab fa-node-js"></i>
-                    </div>
-                    <div className="loader-bar">
-                        <span className='loader-effect'>
-
-                        </span>
-                        <h6>n%</h6>
-                    </div>
-                </div>
-                <div className="square-row">
-                    <div className="row-icon">
+                    <div className="square-row">
+                    <div className="row-icon"  onMouseEnter={()=>handlerHover(9)} onMouseLeave={()=>handlerHover(9)}>
                         <i className="fas fa-server"></i>
                     </div>
                     <div className="loader-bar">
-                        <span className='loader-effect'>
-
+                        <span className={hover9 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "99%"}}>
+                        
                         </span>
-                        <h6>n%</h6>
+                    </div>
+                    <div className="text-percent">
+                        <h5>0{Data.academic.programming.skills.MySQL}%</h5>
                     </div>
                 </div>
             </div>

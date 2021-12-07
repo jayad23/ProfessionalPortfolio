@@ -15,7 +15,7 @@ const RenderCard = ({ name, stage, description, technologies, deployment, repo, 
     return (
         <div className="card">
             {
-                seeMore ? '' :  display ? <img src={ display } alt="" /> : <Loader/>
+                seeMore ? '' : <img src={ display } alt="" /> 
             }
             {
                 seeMore ? '' : <h3>{ name }</h3>
