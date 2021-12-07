@@ -71,7 +71,7 @@
 }
 
 .animation{
-    animation: loading1 3s linear;
+    animation: loading1 2s linear;
     animation-fill-mode: forwards;
 }
 
