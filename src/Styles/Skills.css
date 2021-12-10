@@ -126,6 +126,7 @@
     .square{
         width: 90%;
         margin: 0 auto;
+        margin-top: 3rem;
         height: 20%;
     }
 
@@ -147,8 +148,9 @@
 
     .additionalText{
         margin: 0 auto;
-        margin-top: -2.5rem;
+        margin-top: 0.4rem;
         width: 100%;
+        height: 10%;
         font-size: 0.7rem;
     }
 
