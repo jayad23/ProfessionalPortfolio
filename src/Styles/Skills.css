@@ -13,6 +13,7 @@
     align-items: center;
     background-image: url(../imgs/backgroundSkills.png);
     background-size: cover;
+    overflow: hidden;
 }
 
 .container-skills > a {
