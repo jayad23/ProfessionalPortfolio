@@ -1,4 +1,5 @@
 import React from 'react'
+import { Flip } from 'react-reveal'
 import LibraryReact from './LibraryReact'
 const AdditionalText = ({ react, js, css, html5, tailwind, sass, python, node, MySQL }) => {
 
@@ -7,9 +8,11 @@ const AdditionalText = ({ react, js, css, html5, tailwind, sass, python, node, M
     <div className="additionalText">
       {
         react ?
-        <div className='additionalText-Subcontainer'>
-            <LibraryReact/>
-        </div>
+        <Flip right>
+          <div className='additionalText-Subcontainer'>
+              <LibraryReact/>
+          </div>
+        </Flip>
         : null
       }
     </div>

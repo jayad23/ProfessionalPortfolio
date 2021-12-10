@@ -118,10 +118,8 @@
 @media  screen and (max-width: 600px) {
 
     .container-skills{
-        height: 100%;
-        flex-direction: column;
-        background-image: none;
-
+        background-image: url(../imgs/backgroundSkills2.png);
+        padding-bottom: 12%;
     }
 
     .square{
