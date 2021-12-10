@@ -1,0 +1,16 @@
+.title{
+    margin: 0 auto;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.title > h1 {
+    height: 80%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    color: #db0a81;
+}
