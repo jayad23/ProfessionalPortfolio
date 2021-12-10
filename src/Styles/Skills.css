@@ -120,7 +120,8 @@
 
     .container-skills{
         background-image: url(../imgs/backgroundSkills2.png);
-        padding-bottom: 12%;
+        min-height: 100vh;
+        height: 100%;
     }
 
     .square{
