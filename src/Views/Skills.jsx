@@ -7,7 +7,7 @@ import AdditionalText from '../components/AdditionalText'
 
 const Skills = () => {
 
-    const { Data } = useContext(PersonalInfoContext)
+    const { Data, width } = useContext(PersonalInfoContext)
 
     const [hover1, setHover1] = useState(false)
     const [hover2, setHover2] = useState(false)
@@ -49,12 +49,15 @@ const Skills = () => {
         }
     }
 
+    
+
+
     return (
         <div className="container-skills">
             <Title/>
             <div className='square'>
                     <div className="square-row">
-                        <div className="row-icon" onMouseEnter={()=>handlerHover(1)} onMouseLeave={()=>handlerHover(1)}>
+                        <div className="row-icon" onMouseEnter={ width > 500 ? ()=>handlerHover(1) : null} onMouseLeave={ width > 500 ? ()=>handlerHover(1) : null} onClick={ width <= 500 ? ()=>handlerHover(1) : null}>
                             {
                                 hover1 ? <h5>{Data.academic.programming.skills.React}%</h5> : <i className="fab fa-react"></i>
                             }
@@ -69,7 +72,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="square-row">
-                        <div className="row-icon"  onMouseEnter={()=>handlerHover(2)} onMouseLeave={()=>handlerHover(2)}>
+                        <div className="row-icon"  onMouseEnter={ width > 500 ? ()=>handlerHover(2) : null} onMouseLeave={ width > 500 ? ()=>handlerHover(2) : null} onClick={ width <= 500 ? ()=>handlerHover(2) : null}>
                             {
                                 hover2 ? <h5>{Data.academic.programming.skills.JavaScript}%</h5> : <i className="fab fa-js"></i>
                             }
@@ -84,7 +87,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="square-row">
-                        <div className="row-icon"  onMouseEnter={()=>handlerHover(3)} onMouseLeave={()=>handlerHover(3)}>
+                        <div className="row-icon"  onMouseEnter={ width > 500 ? ()=>handlerHover(3) : null} onMouseLeave={ width > 500 ? ()=>handlerHover(3) : null} onClick={ width <= 500 ? ()=>handlerHover(3): null}>
                             {
                                 hover3 ? <h5>{Data.academic.programming.skills.CSS}%</h5> : <i className="fab fa-css3-alt"></i>
                             }
@@ -99,7 +102,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="square-row">
-                        <div className="row-icon"  onMouseEnter={()=>handlerHover(4)} onMouseLeave={()=>handlerHover(4)}>
+                        <div className="row-icon"  onMouseEnter={ width > 500 ? ()=>handlerHover(4) : null} onMouseLeave={ width > 500 ? ()=>handlerHover(4) : null} onClick={ width <= 500 ? ()=>handlerHover(4) : null}>
                             {
                                 hover4 ? <h5>{Data.academic.programming.skills.HTML5}%</h5> : <i className="fab fa-html5"></i>
                             }
@@ -114,7 +117,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="square-row">
-                        <div className="row-icon"  onMouseEnter={()=>handlerHover(5)} onMouseLeave={()=>handlerHover(5)}>
+                        <div className="row-icon"  onMouseEnter={ width > 500 ? ()=>handlerHover(5) : null} onMouseLeave={ width > 500 ? ()=>handlerHover(5) : null} onClick={ width <= 500 ? ()=>handlerHover(5) : null}>
                             {
                                 hover5 ? <h5>{Data.academic.programming.skills.others.Tailwind}%</h5> : <i className="fas fa-border-style"></i>
                             }
@@ -129,7 +132,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="square-row">
-                        <div className="row-icon"  onMouseEnter={()=>handlerHover(6)} onMouseLeave={()=>handlerHover(6)}>
+                        <div className="row-icon"  onMouseEnter={ width > 500 ? ()=>handlerHover(6) : null} onMouseLeave={ width > 500 ? ()=>handlerHover(6) : null} onClick={ width <= 500 ? ()=>handlerHover(6) : null}>
                             {
                                 hover6 ? <h5>{Data.academic.programming.skills.others.SASS}%</h5> : <i className="fab fa-sass"></i>
                             }
@@ -144,7 +147,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="square-row">
-                        <div className="row-icon"  onMouseEnter={()=>handlerHover(7)} onMouseLeave={()=>handlerHover(7)}>
+                        <div className="row-icon"  onMouseEnter={ width > 500 ? ()=>handlerHover(7) : null} onMouseLeave={ width > 500 ? ()=>handlerHover(7) : null} onClick={ width <= 500 ? ()=>handlerHover(7) : null}>
                             {
                                 hover7 ? <h5>0{Data.academic.programming.skills.Python}%</h5> : <i className="fab fa-python"></i>
                             }
@@ -159,7 +162,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="square-row">
-                        <div className="row-icon"  onMouseEnter={()=>handlerHover(8)} onMouseLeave={()=>handlerHover(8)}>
+                        <div className="row-icon"  onMouseEnter={ width > 500 ? ()=>handlerHover(8) : null} onMouseLeave={ width > 500 ? ()=>handlerHover(8) : null} onClick={ width <= 500 ? ()=>handlerHover(8) : null}>
                             {
                                 hover8 ? <h5>0{Data.academic.programming.skills.NodeJS}%</h5> : <i class="fab fa-node-js"></i>
                             }
@@ -174,7 +177,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="square-row">
-                        <div className="row-icon"  onMouseEnter={()=>handlerHover(9)} onMouseLeave={()=>handlerHover(9)}>
+                        <div className="row-icon"  onMouseEnter={ width > 500 ? ()=>handlerHover(9) : null} onMouseLeave={ width > 500 ? ()=>handlerHover(9) : null} onClick={ width <= 500 ? ()=>handlerHover(9) : null}>
                             {
                                 hover9 ? <h5>0{Data.academic.programming.skills.MySQL}%</h5> : <i className="fas fa-server"></i>
                             }

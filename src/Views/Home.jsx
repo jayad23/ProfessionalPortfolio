@@ -7,7 +7,7 @@ import '../Styles/Home.css'
 
 const Home = () => {
     const navigate = useNavigate()
-    const { Data } = useContext(ProfesionaInfoContext)
+    const { Data, width } = useContext(ProfesionaInfoContext)
     const [ type, setType ] = useState(true)
     const [ mount, setMount ] = useState(false)
     
@@ -23,12 +23,15 @@ const Home = () => {
             </div>  
             <div className='home-text'>
                 {
+                    width > 500 ?
                     mount ?
                     <h3 onMouseLeave={handleMount}
                         onClick={()=> navigate('/about')}
                     >About</h3>
                     :
                     <h3 onMouseEnter={handleMount}>Hello</h3>
+                    :
+                    <h3 onClick={()=> navigate('/about')}>Start Tour Here</h3>
                 }
                 <h4>I am Kike Vanegas</h4>
                 {
