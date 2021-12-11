@@ -1,0 +1,50 @@
+.section-flip{
+    display: flex;
+    gap: 1rem;
+}
+
+.section-flip-image{
+    width: 420px;
+    height: 55px;
+}
+
+.section-flip-image > img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-flip-image-js{
+    width: 200px;
+    height: 50px;
+}
+
+.section-flip-image-js > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.section-flip-image-ht{
+    width: 140px;
+    height: 55px;
+}
+
+.section-flip-image-ht > img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-flip-text > p > span{
+    border-bottom: 2px solid rgb(219, 14, 55);
+    font-weight: bolder;
+}
+
+.section-flip-image-tc{
+    width: 100px;
+    height: 70px;
+}
+
+.section-flip-image-tc > img{
+    width: 100%;
+    height: 100%;
+}
