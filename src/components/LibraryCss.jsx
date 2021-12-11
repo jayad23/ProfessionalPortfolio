@@ -8,7 +8,7 @@ const LibraryCss = () => {
             </div>
             <div className="section-flip-text">
                 <h1>CSS 3</h1>
-                <p>This tool won't just stop amazing me as well as annoy me!!! The things that we can do with it are just shocking once you go deeper in its concepts. While talking about CSS, I tend to remeber a quote on Twitter that read:"I fail every day at becoming the best programmer to become the best programmer I can be."</p>
+                <p>This tool won't just stop amazing me as well as annoying me!!! The things that we can do with it are just shocking once you go deeper in its concepts. While talking about CSS, I tend to remeber a quote on Twitter that read:"I fail every day at becoming the best programmer to become the best programmer I can be."</p>
             </div>
         </div>
     )

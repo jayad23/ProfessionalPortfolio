@@ -32,7 +32,7 @@ export const Data = {
         age: '34',
         DOB: 'June / 22nd / 1987',
         BIO: "I am Jaider Vanegas. You can call me Kike. At age of 34, and after 10 years as an English teacher at the top language centers in my city (Medellin, Col.) I have decided to leave my comfort zone to expand and look for new horizons. That's what defines me best.. that I am fearful like everyone else, but it won't keep me from testing my limits, and reaching out for what I want.",
-        BIO2: "I am a multidisiciplinary person. I play the guitar at a hight level, the harmonica and other musical instruments that I have learned by myself. I paint and draw using different techniques. I learned English and managed to get to a C2 level with a honorary mention given by the University of Michigan and Cambridge English Dep. I am learning French, and I am able to understand Portuguese... all of these with no official training, but just pure will, determination and a couple of videos on YouTube. I play different kinds of sports: I play soccer, American Football, and do free-style rollerblading... all of them at a competitive level. I love reading and learning new things. I often find myself challenged by what I am learning at the time, only to find myself again having it sucessfully learned.",
+        BIO2: "I am a multidisiciplinary person. I play the guitar, the harmonica and other musical instruments that I have learned on my own. I paint and draw using different techniques. I learned English and managed to get to a C2 level with a honorary mention given by the University of Michigan and Cambridge English Dep. I am learning French, and I am able to understand Portuguese... all of these with no official training, but just pure will, determination and a couple of videos on YouTube. I play different kinds of sports: I play soccer, American Football, and do free-style rollerblading... all of them at a competitive level. I love reading and learning new things. I often find myself challenged by what I am learning at the time, only to find myself again having it successfully learned.",
         social : 
         {
             facebook: "https://www.facebook.com/kkvz23/",
@@ -201,7 +201,7 @@ export const Data = {
             id: 6,
             name: 'Weather App',
             stage: 'Fluent',
-            description: 'This project was made with REACT ROUTER, implementing methods of JavaScript to interpret the response of the API requested. It also made aware of a quick UI builder styling library',
+            description: 'This project was made with REACT ROUTER, implementing methods of JavaScript to interpret the response of the API requested. It also made me aware of a quick UI builder styling library',
             technologies: 'REACT ROUTER V5, CONTEXT, REACT JS, TAILWIND, JS',
             url1:'https://app-weather-chi.vercel.app/',
             url2:'https://github.com/jayad23/AppWeather.git',
@@ -211,7 +211,7 @@ export const Data = {
             id: 7,
             name: 'E-Commerce',
             stage: 'Fluent',
-            description: 'This project is the apple of my eye. It defintely took me to a higher level of comprehension on technologial tools, resources and methods to create a better user experience. Everything in this project was created from scratch',
+            description: 'This project is the apple of my eye. It defintely took me to a higher level of comprehension on technological tools, resources and methods to create a better user experience. Everything in this project was created from scratch',
             technologies: 'REACT JS, REACT ROUTER V6, HOOKS, CONTEXT, REDUCER, CSS, FIREBASE, GITHUB, JS, DATABASE CONSTRUCTION',
             url1:'https://project-ecommercce-46cdhwtei-jayad23.vercel.app/',
             url2:'https://github.com/jayad23/projectEcommerce.git',
