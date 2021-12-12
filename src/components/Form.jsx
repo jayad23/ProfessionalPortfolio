@@ -14,6 +14,7 @@ const Form = () => {
         ).then(res => {
             console.log(res)
         }).catch(err => console.log(err))
+        e.target.reset()
     }
 
     return (
