@@ -1,0 +1,105 @@
+.container-contact{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-image: url(../imgs/Communication.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-contact > h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    padding: .2rem .8rem;
+    background-color: #eeeeee60;
+    color: rgba(194, 9, 46, 0.658);
+}
+
+.container-contact > button{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    background-color: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(243, 6, 53);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    letter-spacing: 0.6rem;
+    border: 2px solid crimson;
+    padding: .1rem .1rem .1rem .6rem;
+    text-align: center;
+    background-color: #03030357;
+}
+
+.form-wrapper{
+    margin-top: 3rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form-inner-container{
+    width: 286px;
+    background-color: #eeeeee83;
+    padding-bottom: 0.5rem;
+}
+
+.form-inner-container > label{
+    font-size: 1.2rem;
+}
+
+.form-inner-container > input{
+    width: 90%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+
+.form-inner-container > input[type=text]{
+    font-family: 'Oswald', sans-serif;
+}
+.form-inner-container > input[type=email]{
+    font-family: 'Oswald', sans-serif;
+}
+
+.form-inner-container > textarea{
+    width: 90%;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0.5rem;
+    border: none;
+}
+
+.buttons-options{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.buttons-options > button{
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    padding: 0.3rem;
+    border: none;
+    font-weight: bolder;
+    color: #fff;
+    width: 100px;
+    border-radius: 0.5rem;
+}
+
+.buttons-options > button:nth-child(1){
+    background-color: rgba(220, 20, 60, 0.952);
+}
+
+.buttons-options > button:nth-child(2){
+    background-color: rgba(0, 128, 0, 0.966);
+}

@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../components/Header'
+import FormIcon from './FormIcon'
 
 const MainLayOut = ({children}) => {
     return (
         <div>
-            <Header/>
+            <FormIcon/>
             {children}
         </div>
     )

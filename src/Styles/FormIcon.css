@@ -1,0 +1,24 @@
+.icon{
+    background-color:#db0a81 ;
+    left: 0.8rem;
+    top: 0.8rem;
+    position: absolute;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.icon > i {
+    position: fixed;
+    
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1rem;
+    z-index: 1000;
+}
+

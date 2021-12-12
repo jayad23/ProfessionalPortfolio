@@ -8,6 +8,8 @@ import Home from "./Views/Home";
 import About from "./Views/About";
 import WorkHistory from "./Views/WorkHistory";
 import Skills from "./Views/Skills";
+import MainLayOut from "./Custom/MainLayOut";
+import Form from "./components/Form";
 
 //Layout
 
@@ -20,13 +22,16 @@ function App() {
   return (
     <BrowserRouter>
       <ProfesionalProvider>
+        <MainLayOut>
           <Routes>
             <Route path="/" exact element={<Home/>}/>
             <Route path="/about" exact element={<About/>}/>
             <Route path="/academic" exact element={<Academic/>}/>
             <Route path="/workhistory" exact element={<WorkHistory/>}/>
             <Route path="/skills" exact element={<Skills/>}/>
+            <Route path="/contact" exact element={<Form/>}/>
           </Routes>
+        </MainLayOut>
       </ProfesionalProvider>
     </BrowserRouter>
   );
