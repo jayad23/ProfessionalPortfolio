@@ -62,9 +62,14 @@
     border: none;
 }
 
+.form-inner-container > input::placeholder{
+    color: red;
+}
+
 .form-inner-container > input[type=text]{
     font-family: 'Oswald', sans-serif;
 }
+
 .form-inner-container > input[type=email]{
     font-family: 'Oswald', sans-serif;
 }
@@ -74,6 +79,10 @@
     font-family: 'Oswald', sans-serif;
     margin-top: 0.5rem;
     border: none;
+}
+
+.form-inner-container > textarea::placeholder{
+    color: red;
 }
 
 .buttons-options{
@@ -96,10 +105,31 @@
     border-radius: 0.5rem;
 }
 
-.buttons-options > button:nth-child(1){
+.buttons-options > .btn-2 > a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    padding: 0.3rem;
+    border: none;
+    font-weight: bolder;
+    color: #fff;
+    width: 100px;
+    border-radius: 0.5rem;
+}
+
+.buttons-options > .btn-1{
     background-color: rgba(220, 20, 60, 0.952);
 }
 
-.buttons-options > button:nth-child(2){
-    background-color: rgba(0, 128, 0, 0.966);
+
+.buttons-options >.btn-2{
+    background-color: rgba(8, 172, 8, 0.966);
+}
+
+.buttons-options > .btn-1:hover{
+    background-color: rgba(117, 8, 30, 0.952);
+}
+
+.buttons-options > .btn-2:hover{
+    background-color: rgba(8, 63, 8, 0.966);
 }

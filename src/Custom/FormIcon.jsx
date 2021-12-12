@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { useNavigate } from 'react-router'
 import '../Styles/FormIcon.css'
+import ProfesionaInfoContext from '../Context/ProfesionalInfoContext'
 
 const FormIcon = () => {
     const navigate = useNavigate()
-    const [showIcon, setShowIcon] = useState(false)
+    const { showIcon, setShowIcon } = useContext(ProfesionaInfoContext)
+
     const handlerShowIcon = ()=>{
-        setShowIcon(!showIcon)
+        setShowIcon(true)
         navigate('/contact')
     }
 

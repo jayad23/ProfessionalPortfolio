@@ -40,7 +40,7 @@ export const Data = {
             instagram: "https://www.instagram.com/kkvngz23/",
             LinkedIn: "https://www.linkedin.com/in/jaidervanegas23/",
             YouTuBe: "https://www.youtube.com/channel/UCCzn5vab6xL1-Vwdzk8Meeg",
-            WhatsApp: `https://api.whatsapp.com/send?phone=573016368707&text=${text}`,
+            WhatsApp: `https://api.whatsapp.com/send?phone=573196149019&text=${text}`,
             phone: +573016368707,
             email: 'jaidervanegas@live.com'
         }

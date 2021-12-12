@@ -5,6 +5,8 @@ const ProfesionaInfoContext = createContext() //esto es el contexto
 
 const ProfesionalProvider = ({children}) => { //esto es el componente proveedor
     
+    const [ showIcon, setShowIcon ] = useState(false)
+
     function useWindowSize (){
         const [ size, setSize ] = useState([window.innerWidth, window.innerHeight])
         useEffect(()=>{
@@ -15,11 +17,13 @@ const ProfesionalProvider = ({children}) => { //esto es el componente proveedor
         }, [])
         return size
     }
-    
+
     const [ width ] = useWindowSize()
     const data = {
         Data,
-        width
+        width,
+        showIcon,
+        setShowIcon
     }
    
     return (
