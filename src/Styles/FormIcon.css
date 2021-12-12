@@ -2,7 +2,7 @@
     background-color:#db0a81 ;
     left: 0.8rem;
     top: 0.8rem;
-    position: absolute;
+    position: fixed;
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 50%;
