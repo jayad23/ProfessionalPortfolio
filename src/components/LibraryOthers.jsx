@@ -7,7 +7,7 @@ const LibraryOthers = () => {
                 <img src="https://cdn.dribbble.com/users/269297/screenshots/2091805/gears.gif" alt="" />
             </div>
             <div className="section-flip-text">
-                <h1>In Process...</h1>
+                <h1>In Progress...</h1>
                 <p>This technology will be acquired very soon</p>
             </div>
         </div>

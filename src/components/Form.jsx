@@ -23,28 +23,28 @@ const Form = () => {
             setIsNameAlright(true)
         }else {
             setShowError({...showError, displayError:'Please, Complete this space'})
-            setIsNameAlright(false)
+            
         }
         if (inputValues.email.length !== 0){
             setIsMailAlright(true)
         }else {
             setShowError({...showError, displayError:'Please, Complete this space'})
-            setIsMailAlright(false)
+            
         }
         if (inputValues.phone.length !== 0){
             setIsPhoneAlright(true)
         }else {
             setShowError({...showError, displayError:'Please, Complete this space'})
-            setIsPhoneAlright(false)
+            
         }
         if (inputValues.text.length !== 0){
             setIsTextAlright(true)
         }else {
             setShowError({...showError, displayError:'Please, Complete this space'})
-            setIsTextAlright(false)
-        }
-
-        if( isNameAlright && isMailAlright && isPhoneAlright && isTextAlright ){
+            
+        } 
+        
+        if( isNameAlright & isMailAlright & isPhoneAlright & isTextAlright ){
             emailjs.sendForm(
                 'service_ebcs33s', 
                 'template_16jnaoj', 
@@ -52,17 +52,21 @@ const Form = () => {
                 "user_injv7SkV29ogtnSarH3HB"
             ).then(res => {
                 console.log(res)
+                alert('Your message was sent correctly')
             }).catch(err => {
                 console.log(err)
             })
             e.target.reset()
+            setShowError({displayError:''})
         }
+        
     }
 
     const handlerReturn = ()=>{
         navigate('/')
         setShowIcon(false)
     }
+
 
     const consultation = `${inputValues.name}, ${inputValues.email}, ${inputValues.text}`
     let WhatsAppLink = `https://api.whatsapp.com/send?phone=573196149019&text=${consultation}`
@@ -82,7 +86,7 @@ const Form = () => {
                     <textarea cols="30" rows="8" name="message" onChange={(e)=> setInputValues({...inputValues, text:e.target.value})} placeholder={showError.displayError}></textarea>
                 </div>
                 <section className='buttons-options'>
-                    <button className="btn-1" type='submit' value="Send">VIA E-MAIL</button>
+                    <button className="btn-1" type='submit'>VIA E-MAIL</button>
                     <button className="btn-2"><a href={WhatsAppLink} target="_blank">VIA WHATSAPP</a></button>
                 </section>
             </form>
