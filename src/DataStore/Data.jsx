@@ -74,11 +74,11 @@ export const Data = {
         diploma :
         {   
             completed: true,
-            Degree: "Diploma in Didactics of English",
-            institute: "Univserity Luis Amigo",
+            Degree: "Diploma in English Didactis",
+            institute: "University Luis Amigó",
             city: "Medellin / Colombia",
-            online: false,
-            yearOfCompletion: "2018",
+            online: true,
+            yearOfCompletion: "2020",
             yearsInTotal: 1
         },
         programming :
@@ -111,6 +111,30 @@ export const Data = {
                     SASS: 50,
                     Tailwind: 50
                 },
+            },
+            alternateOne:{
+                completed: false,
+                Degree:"Machine Learning",
+                institute: "Standford University",
+                city: null,
+                online: true,
+                yearOfCompletion: "in Progress",
+            },
+            alternateTwo:{
+                completed: false,
+                Degree:"The Complete Developer's guide: TS",
+                institute: "Udemy",
+                city: null,
+                online: true,
+                yearOfCompletion: "in Progress",
+            },
+            alternateThree:{
+                completed: false,
+                Degree:"Advanced JavaScript Master",
+                institute: "Udemy",
+                city: null,
+                online: true,
+                yearOfCompletion: "in Progress",
             }
         }
 

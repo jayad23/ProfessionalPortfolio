@@ -20,7 +20,37 @@ const Academic = () => {
                     <ul>
                         <div className='div-info'>
                             <span>
-                                <i className="fas fa-file-code"></i>
+                                <i className="fas fa-laptop-code"></i>
+                            </span>
+                            <article>
+                                <h4>{ Data.academic.programming.alternateOne.Degree }</h4>
+                                <h6>{ Data.academic.programming.alternateOne.institute }</h6>
+                                <h6>{ Data.academic.programming.alternateOne.yearOfCompletion }</h6>
+                            </article>
+                        </div>
+                        <div className='div-info'>
+                            <span>
+                                <i className="fas fa-file-alt"></i>
+                            </span>
+                            <article>
+                                <h4>{ Data.academic.programming.alternateTwo.Degree }</h4>
+                                <h6>{ Data.academic.programming.alternateTwo.institute }</h6>
+                                <h6>{ Data.academic.programming.alternateTwo.yearOfCompletion }</h6>
+                            </article>
+                        </div>
+                        <div className='div-info'>
+                            <span>
+                                <i className="fab fa-js"></i>
+                            </span>
+                            <article>
+                                <h4>{ Data.academic.programming.alternateThree.Degree }</h4>
+                                <h6>{ Data.academic.programming.alternateThree.institute }</h6>
+                                <h6>{ Data.academic.programming.alternateThree.yearOfCompletion }</h6>
+                            </article>
+                        </div>
+                        <div className='div-info'>
+                            <span>
+                                <i className="fas fa-certificate"></i>
                             </span>
                             <article>
                                 <h4>{ Data.academic.programming.Degree }</h4>
@@ -30,7 +60,7 @@ const Academic = () => {
                         </div>
                         <div className='div-info'>
                             <span>
-                                <i className="fas fa-certificate"></i>
+                                <i className="fas fa-university"></i>
                             </span>
                             <article>
                                 <h4>{ Data.academic.diploma.Degree }</h4>
@@ -40,22 +70,12 @@ const Academic = () => {
                         </div>
                         <div className='div-info'>
                             <span>
-                                <i className="fas fa-university"></i>
+                                <i className="fas fa-globe"></i>
                             </span>
                             <article>
                                 <h4>{ Data.academic.bachelor.Degree }</h4>
                                 <h6>{ Data.academic.bachelor.institute }</h6>
                                 <h6>{ Data.academic.bachelor.yearOfCompletion }</h6>
-                            </article>
-                        </div>
-                        <div className='div-info'>
-                            <span>
-                                <i className="fas fa-globe"></i>
-                            </span>
-                            <article>
-                                <h4>Teaching Knowledge Test (TKT)</h4>
-                                <h6>Cambridge University</h6>
-                                <h6>2012</h6>
                             </article>
                         </div>
                     </ul>
