@@ -161,7 +161,7 @@ export const Data = {
         },
         experienceC :
         {   
-            completed: false,
+            completed: true,
             YOS: "2020",
             YOF: "Present",
             institute: "Univseridad EAFIT",
