@@ -35,6 +35,7 @@ export const Data = {
         BIO2: "I am a multidisiciplinary person. I play the guitar, the harmonica and other musical instruments that I have learned on my own. I paint and draw using different techniques. I learned English and managed to get to a C2 level with a honorary mention given by the University of Michigan and Cambridge English Dep. I am learning French, and I am able to understand Portuguese... all of these with no official training, but just pure will, determination and a couple of videos on YouTube. I play different kinds of sports: I play soccer, American Football, and do free-style rollerblading... all of them at a competitive level. I love reading and learning new things. I often find myself challenged by what I am learning at the time, only to find myself again having it successfully learned.",
         social : 
         {
+            gitHub: 'https://github.com/jayad23',
             facebook: "https://www.facebook.com/kkvz23/",
             twitter: "https://twitter.com/KkVngz23",
             instagram: "https://www.instagram.com/kkvngz23/",
@@ -121,20 +122,20 @@ export const Data = {
                 yearOfCompletion: "in Progress",
             },
             alternateTwo:{
-                completed: false,
+                completed: true,
                 Degree:"The Complete Developer's guide: TS",
                 institute: "Udemy",
                 city: null,
                 online: true,
-                yearOfCompletion: "in Progress",
+                yearOfCompletion: 2022,
             },
             alternateThree:{
-                completed: false,
-                Degree:"Advanced JavaScript Master",
-                institute: "Udemy",
+                completed: true,
+                Degree:"JavaScript Code Chanllenges",
+                institute: "LinkedIn",
                 city: null,
                 online: true,
-                yearOfCompletion: "in Progress",
+                yearOfCompletion: 2022,
             }
         }
 

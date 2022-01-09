@@ -17,8 +17,10 @@ import Form from "./components/Form";
 import { ProfesionalProvider } from "./Context/ProfesionalInfoContext";
 import Academic from "./Views/Academic";
 
+
+
 function App() {
-    
+ 
   return (
     <BrowserRouter>
       <ProfesionalProvider>
