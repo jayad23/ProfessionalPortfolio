@@ -123,7 +123,7 @@ export const Data = {
             },
             alternateTwo:{
                 completed: true,
-                Degree:"The Complete Developer's guide: TS",
+                Degree:"TS: The Complete Developer's guide",
                 institute: "Udemy",
                 city: null,
                 online: true,
