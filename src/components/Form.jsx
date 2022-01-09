@@ -87,7 +87,7 @@ const Form = () => {
                 </div>
                 <section className='buttons-options'>
                     <button className="btn-1" type='submit'>VIA E-MAIL</button>
-                    <button className="btn-2"><a href={WhatsAppLink} target="_blank">VIA WHATSAPP</a></button>
+                    <button className="btn-2"><a href={WhatsAppLink} target="_blank" rel="noreferrer">VIA WHATSAPP</a></button>
                 </section>
             </form>
  

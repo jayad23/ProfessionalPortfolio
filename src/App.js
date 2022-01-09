@@ -11,8 +11,6 @@ import Skills from "./Views/Skills";
 import MainLayOut from "./Custom/MainLayOut";
 import Form from "./components/Form";
 
-//Layout
-
 //Provider
 import { ProfesionalProvider } from "./Context/ProfesionalInfoContext";
 import Academic from "./Views/Academic";

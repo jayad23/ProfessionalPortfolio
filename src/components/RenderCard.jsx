@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Loader from '../components/Loader'
 
 // Styles
 import '../Styles/WorkHistory.css'
