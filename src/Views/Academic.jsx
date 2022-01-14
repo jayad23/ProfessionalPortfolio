@@ -30,7 +30,7 @@ const Academic = () => {
             </div>
             <Link to="/about" className='back'><i className="fas fa-arrow-left"></i></Link>
         </div>
-            
+        // refactored
     )
 }
 
