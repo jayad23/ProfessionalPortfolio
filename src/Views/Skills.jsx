@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import PersonalInfoContext from '../Context/ProfesionalInfoContext'
 import Title from '../components/Title'
 import AdditionalText from '../components/AdditionalText'
-
+// To add
 const Skills = () => {
 
     const { Data, width } = useContext(PersonalInfoContext)
