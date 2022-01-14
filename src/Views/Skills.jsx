@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import PersonalInfoContext from '../Context/ProfesionalInfoContext'
-import '../Styles/Skills.css'
 import Title from '../components/Title'
 import AdditionalText from '../components/AdditionalText'
 
@@ -203,7 +202,7 @@ const Skills = () => {
                 node = {hover8}
                 MySQL = {hover9}
             />
-            <Link to="/about" className="back"><i class="fas fa-arrow-left"></i></Link>
+            <Link to="/about" className="back"><i className="fas fa-arrow-left"></i></Link>
         </div>
     )
 }

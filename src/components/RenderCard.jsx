@@ -1,8 +1,4 @@
 import React, { useState } from 'react'
-
-// Styles
-import '../Styles/WorkHistory.css'
-
 const RenderCard = ({ name, stage, description, technologies, deployment, repo, display }) => {
     
     const [ seeMore, setSeeMore ] = useState(false)

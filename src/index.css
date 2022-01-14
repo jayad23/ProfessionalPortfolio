@@ -1,3 +1,15 @@
+@import url('./App.css');
+@import url('./Styles/About.css');
+@import url('./Styles/Academic.css');
+@import url('./Styles/Form.css');
+@import url('./Styles/FormIcon.css');
+@import url('./Styles/Home.css');
+@import url('./Styles/Loader.css');
+@import url('./Styles/Sections.css');
+@import url('./Styles/Skills.css');
+@import url('./Styles/SkillsTitle.css');
+@import url('./Styles/WorkHistory.css');
+
 body {
   margin: 0;
   padding: 0;

@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ProfesionaInfoContext from '../Context/ProfesionalInfoContext'
-import '../Styles/Academic.css'
 
 const Academic = () => {
 
@@ -80,7 +79,7 @@ const Academic = () => {
                         </div>
                     </ul>
                 </div>
-                <Link to="/about" className={ change ? 'back' : 'black'}><i class="fas fa-arrow-left"></i></Link>
+                <Link to="/about" className={ change ? 'back' : 'black'}><i className="fas fa-arrow-left"></i></Link>
             </div>
             
     )

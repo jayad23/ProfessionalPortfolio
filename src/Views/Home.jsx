@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router'
 import Typical from 'react-typical'
 import ProfesionaInfoContext from '../Context/ProfesionalInfoContext'
 
-import '../Styles/Home.css'
-
 const Home = () => {
     const navigate = useNavigate()
     const { Data, width } = useContext(ProfesionaInfoContext)
@@ -43,6 +41,8 @@ const Home = () => {
                                 loop={Infinity}
                                 wrapper='b'
                                 steps={[
+                                    `${width > 500 ? 'Hover' : 'Touch'} over ${width > 500 ? 'Hello' : 'Start'}`,
+                                        2000,
                                     'I am a web developer',
                                         1000,
                                     'I love vivid colours',
@@ -75,12 +75,12 @@ const Home = () => {
             </div>
             <aside className='home-social'>
                 <ul>
-                    <li><a href={Data.personal.social.facebook} target="_blank" rel="noreferrer" className="fab fa-facebook-f" ></a></li>
-                    <li><a href={Data.personal.social.twitter} target="_blank" rel="noreferrer" className="fab fa-twitter" ></a></li>
-                    <li><a href={Data.personal.social.YouTuBe} target="_blank" rel="noreferrer" className="fab fa-youtube" ></a></li>
-                    <li><a href={Data.personal.social.LinkedIn} target="_blank" rel="noreferrer" className="fab fa-linkedin" ></a></li>
-                    <li><a href={Data.personal.social.instagram} target="_blank" rel="noreferrer" className="fab fa-instagram" ></a></li>
-                    <li><a href={Data.personal.social.WhatsApp} target="_blank" rel="noreferrer" class="fab fa-whatsapp" ></a></li>
+                    <li><a href={Data.personal.social.facebook} target="_blank" rel="noreferrer" className="fab fa-facebook-f" >{}</a></li>
+                    <li><a href={Data.personal.social.twitter} target="_blank" rel="noreferrer" className="fab fa-twitter" >{}</a></li>
+                    <li><a href={Data.personal.social.YouTuBe} target="_blank" rel="noreferrer" className="fab fa-youtube" >{}</a></li>
+                    <li><a href={Data.personal.social.LinkedIn} target="_blank" rel="noreferrer" className="fab fa-linkedin" >{}</a></li>
+                    <li><a href={Data.personal.social.instagram} target="_blank" rel="noreferrer" className="fab fa-instagram">{}</a></li>
+                    <li><a href={Data.personal.social.WhatsApp} target="_blank" rel="noreferrer" className="fab fa-whatsapp" >{}</a></li>
                 </ul>
             </aside>
         </div>

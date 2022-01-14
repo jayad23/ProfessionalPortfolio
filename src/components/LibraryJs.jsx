@@ -1,6 +1,4 @@
 import React from 'react'
-import '../Styles/Sections.css'
-
 const LibraryJs = () => {
     return (
         <div className="section-flip">

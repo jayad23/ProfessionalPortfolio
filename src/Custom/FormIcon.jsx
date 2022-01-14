@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router'
-import '../Styles/FormIcon.css'
 import ProfesionaInfoContext from '../Context/ProfesionalInfoContext'
 
 const FormIcon = () => {
