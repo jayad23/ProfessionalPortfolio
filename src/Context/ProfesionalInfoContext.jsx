@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react"
-import { Data } from "../DataStore/Data"
+import { Data } from '../DataStore/Data'
 
 const ProfesionaInfoContext = createContext();
 

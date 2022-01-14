@@ -14,7 +14,7 @@ const About = () => {
                 <Link to="/academic">Academic Information</Link>
                 <Link to="/workhistory">Work History</Link>
                 <Link to="/skills">Skills</Link>
-                <a href={ Data.images.CV } download="Jaider Vanegas CV  ">Resume</a>
+                <a href={ Data.images.CV } download="Jaider Vanegas CV ">Resume</a>
             </div>
             <Link to="/" className="back"><i class="fas fa-arrow-left"></i></Link>
         </div>
