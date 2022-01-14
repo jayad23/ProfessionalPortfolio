@@ -14,6 +14,8 @@ const Form = () => {
     const [ isMailAlright, setIsMailAlright ] = useState(false)
     const [ isPhoneAlright, setIsPhoneAlright ] = useState(false)
     const [ isTextAlright, setIsTextAlright ] = useState(false)
+    //
+    const [ mailError, setMailerror ] = useState({error:''})
 
     const { setShowIcon } = useContext( ProfesionaInfoContext )
 
@@ -51,10 +53,10 @@ const Form = () => {
                 e.target, 
                 "user_injv7SkV29ogtnSarH3HB"
             ).then(res => {
-                console.log(res)
                 alert('Your message was sent correctly')
             }).catch(err => {
-                console.log(err)
+                setMailerror({...mailError, error: err})
+                alert(mailError.error)
             })
             e.target.reset()
             setShowError({displayError:''})

@@ -19,6 +19,7 @@ import image4 from '../imgs/4.png'
 import image5 from '../imgs/5.png'
 import image6 from '../imgs/6.png'
 import image7 from '../imgs/7.png'
+
 const text = 'Hello, Kike. I am interested in your work...'
 export const Data = {
     personal:
@@ -60,166 +61,116 @@ export const Data = {
         Text2T2: Text2T2,
         CV: CV
     },
-    academic:[
-        {
-            id: 1,
-            degree:'Bachelor Degree in Education in Theology.',
-            institute:'Adventist Church',
+    academic :
+    {
+        bachelor :
+        {   completed: true,
+            Degree: "Bachelor degree in Education and Theology",
+            institute: "Adventist University (UNAC)",
+            city: "Medellin / Colombia",
             online: false,
-            status:true,
-            yearOfCompletion:2011,
-            yearsInTotal:5,
-            icon:'fas fa-university'
-        },{
-            id: 2,
-            degree:'Diploma in Didactics of English.',
-            institute:'Luis Amigo University',
-            online:false,
-            status:true,
-            yearOfCompletion:2018,
-            yearsInTotal:1,
-            icon:'fas fa-file-alt'
-        },{
-            id: 3,
-            degree:'Machine Learning',
-            institute:'Stanford University',
-            online:true,
-            status:false,
-            yearOfCompletion:2022,
-            yearsInTotal:1,
-            icon:'fas fa-laptop-code'
-        },{
-            id: 4,
-            degree:'Full-Stack Software Development & Computer Science.',
-            institute:'Academlo',
-            online:true,
-            status:'In Progress.',
-            yearOfCompletion:2022,
-            yearsInTotal:1,
-            icon:'fas fa-certificate'
-        },{
-            id: 5,
-            degree:'Front-End Development.',
-            institute:'Udemy',
-            online:true,
-            yearOfCompletion:2020,
-            yearsInTotal:1,
-            icon:'fas fa-certificate'
-        }
-        
-    ],
-    certifications:[
-        {
-            id: 1,
-            degree:'AGILE DEVELOPMENT PRACTICES',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2022
-        },{
-            id: 2,
-            degree:'REACT: HOOKS',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2022
-        },{
-            id: 3,
-            degree:'REACT: DESIGN PATTERNS',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2022
-        },{
-            id: 4,
-            degree:'REACT: USING TYPESCRIPT',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2022
-        },{
-            id: 5,
-            degree:'TAILWIND CSS ESSENTIAL TRAINING',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2022
-        },{
-            id: 6,
-            degree:'TYPESCRIPT: OOP',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2022
-        },{
-            id: 7,
-            degree:'JS: CODE CHALENGES',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2022
-        },{
-            id: 8,
-            degree:'JS: CODE CHALENGES',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2022
-        },{
-            id: 9,
-            degree:'GIT & GITHUB.',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2018
-        },{
-            id: 10,
-            degree:'WEB DEVELOPMENT',
-            institute:'Platzi',
-            online:true,
-            yearOfCompletion:2017
-        },{
-            id: 11,
-            degree:'RESPONSIVE DESIGN',
-            institute:'Platzi',
-            online:true,
-            yearOfCompletion:2017
-        }
-    ],
-    skills: {
-        HTML5: 90,
-        CSS: 90,
-        JavaScript: 60,
-        React: 90,
-        Angular: 10,
-        NodeJS: 1,
-        Python: 1,
-        MySQL: 1,
-        others : {
-            bootstrap: 15,
-            SASS: 50,
-            Tailwind: 50
-        }
-    },
-    languages:[
-        {
-            id:1,
-            lang: 'English',
-            spoken: 100,
-            written: 100,
-            read: 100,
-            Listen: 100,
-            icon:'fas fa-globe'
-        },{
-            id:2,
-            lang: 'Spanish',
-            spoken: 100,
-            written: 100,
-            read: 100,
-            Listen: 100,
-            icon:'fas fa-globe'
-        },{
-            id:1,
-            lang: 'Fench',
-            spoken: 20,
-            written: 20,
-            read: 20,
-            Listen: 20,
-            icon:'fas fa-globe'
+            yearOfCompletion: "2011",
+            yearsInTotal: 5
         },
+        diploma :
+        {   
+            completed: true,
+            Degree: "Diploma in English Didactis",
+            institute: "University Luis Amigó",
+            city: "Medellin / Colombia",
+            online: true,
+            yearOfCompletion: "2020",
+            yearsInTotal: 1
+        },
+        programming :
+        {   
+            completed: false,
+            Degree:"Full Stack Software Development & Computer Science",
+            institute: "Academlo",
+            city: null,
+            online: true,
+            yearOfCompletion: "in Progress",
+            projectsDone :
+            {
+                portfolio:"https://pensive-benz-c1206c.netlify.app/index.html",
+                singleLevelGame: "https://tender-tesla-759884.netlify.app/",
+                GitHubSearch: "",
+                Weather: ""
+            },
+            skills : 
+            {
+                HTML5: 90,
+                CSS: 90,
+                JavaScript: 60,
+                React: 90,
+                Angular: 10,
+                NodeJS: 1,
+                Python: 1,
+                MySQL: 1,
+                others : {
+                    bootstrap: 15,
+                    SASS: 50,
+                    Tailwind: 50
+                },
+            },
+            alternateOne:{
+                completed: false,
+                Degree:"Machine Learning",
+                institute: "Standford University",
+                city: null,
+                online: true,
+                yearOfCompletion: "in Progress",
+            },
+            alternateTwo:{
+                completed: true,
+                Degree:"TS: The Complete Developer's guide",
+                institute: "Udemy",
+                city: null,
+                online: true,
+                yearOfCompletion: 2022,
+            },
+            alternateThree:{
+                completed: true,
+                Degree:"JavaScript Code Chanllenges",
+                institute: "LinkedIn",
+                city: null,
+                online: true,
+                yearOfCompletion: 2022,
+            }
+        }
 
-    ],
+    },
+    workBackground :
+    {
+        experienceA :
+        {   YOS: "2013",
+            YOF: "2018",
+            institute: "Centro Colombo Americano",
+            city: "Medellin / Colombia",
+            online: false,
+            logo: 'https://colomboworld.com/wp-content/uploads/2019/03/Imagotipo-CCAM-2019-Policrom%C3%ADa.png'
+        },
+        experienceB :
+        {   
+            YOS: "2018",
+            YOF: "2021",
+            institute: "COMFAMA",
+            city: "Medellin / Colombia",
+            online: false,
+            logo: 'https://fundacionpostobon.com/wp-content/uploads/2018/03/logo-comfama-01.png'
+        },
+        experienceC :
+        {   
+            completed: true,
+            YOS: "2020",
+            YOF: "Present",
+            institute: "Univseridad EAFIT",
+            city: "Medellin / Colombia",
+            online: true,
+            logo: 'https://www.eafit.edu.co/cec/congresos/losas-y-pilas/PublishingImages/Paginas/Inicio/Logotipo-EAFIT-azul-en-PNG.png'
+        }
+
+    },
     workHistory: [
         {
             id: 1,
@@ -230,7 +181,8 @@ export const Data = {
             url1:'https://pensive-benz-c1206c.netlify.app/index.html',
             url2:'https://github.com/jayad23/Portafolio.git',
             image: image1,
-        },{
+        },
+        {
             id: 2,
             name: 'Poke Decks',
             stage: 'True-Beginner',
@@ -239,7 +191,8 @@ export const Data = {
             url1:'https://priceless-almeida-beb0ce.netlify.app/',
             url2:'https://github.com/jayad23/Pokemon.git',
             image: image2,
-        },{
+        },
+        {
             id: 3,
             name: 'Pokemon Game',
             stage: 'True-Beginner',
@@ -248,7 +201,8 @@ export const Data = {
             url1:'https://tender-tesla-759884.netlify.app/',
             url2:'https://github.com/jayad23/Pokemon-Game.git',
             image: image3,
-        },{
+        },
+        {
             id: 4,
             name: 'To-DO List',
             stage: 'Beginner',
@@ -257,7 +211,8 @@ export const Data = {
             url1:'https://jayad23.github.io/todoList/',
             url2:'https://github.com/jayad23/todoList.git',
             image: image4,
-        },{
+        },
+        {
             id: 5,
             name: 'Git Hub User Search App',
             stage: 'Semi-Fluent',
@@ -266,7 +221,8 @@ export const Data = {
             url1:'https://git-hub-api-project.vercel.app/',
             url2:'https://github.com/jayad23/GitHubApiProject.git',
             image: image5,
-        },{
+        },
+        {
             id: 6,
             name: 'Weather App',
             stage: 'Fluent',
@@ -275,7 +231,8 @@ export const Data = {
             url1:'https://app-weather-chi.vercel.app/',
             url2:'https://github.com/jayad23/AppWeather.git',
             image: image6,
-        },{
+        },
+        {
             id: 7,
             name: 'E-Commerce',
             stage: 'Fluent',
