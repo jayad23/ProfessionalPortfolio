@@ -58,7 +58,7 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon" onMouseEnter={ width > 700 ? ()=>handlerHover(1) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(1) : null} onClick={ width <= 700 ? ()=>handlerHover(1) : null}>
                             {
-                                hover1 ? <h5>{Data.academic.programming.skills.React}%</h5> : <i className="fab fa-react"></i>
+                                hover1 ? <h5>{Data.skills.React}%</h5> : <i className="fab fa-react"></i>
                             }
                         </div>
                         <div className="loader-bar">
@@ -73,11 +73,11 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(2) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(2) : null} onClick={ width <= 700 ? ()=>handlerHover(2) : null}>
                             {
-                                hover2 ? <h5>{Data.academic.programming.skills.JavaScript}%</h5> : <i className="fab fa-js"></i>
+                                hover2 ? <h5>{Data.skills.JavaScript}%</h5> : <i className="fab fa-js"></i>
                             }
                         </div>
                         <div className="loader-bar">
-                            <span className={hover2 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "40%"}}>
+                            <span className={hover2 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "25%"}}>
                                 
                             </span>
                         </div>
@@ -88,7 +88,7 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(3) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(3) : null} onClick={ width <= 700 ? ()=>handlerHover(3): null}>
                             {
-                                hover3 ? <h5>{Data.academic.programming.skills.CSS}%</h5> : <i className="fab fa-css3-alt"></i>
+                                hover3 ? <h5>{Data.skills.CSS}%</h5> : <i className="fab fa-css3-alt"></i>
                             }
                         </div>
                         <div className="loader-bar">
@@ -103,7 +103,7 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(4) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(4) : null} onClick={ width <= 700 ? ()=>handlerHover(4) : null}>
                             {
-                                hover4 ? <h5>{Data.academic.programming.skills.HTML5}%</h5> : <i className="fab fa-html5"></i>
+                                hover4 ? <h5>{Data.skills.HTML5}%</h5> : <i className="fab fa-html5"></i>
                             }
                         </div>
                         <div className="loader-bar">
@@ -118,7 +118,7 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(5) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(5) : null} onClick={ width <= 700 ? ()=>handlerHover(5) : null}>
                             {
-                                hover5 ? <h5>{Data.academic.programming.skills.others.Tailwind}%</h5> : <i className="fas fa-border-style"></i>
+                                hover5 ? <h5>{Data.skills.others.Tailwind}%</h5> : <i className="fas fa-border-style"></i>
                             }
                         </div>
                         <div className="loader-bar">
@@ -133,7 +133,7 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(6) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(6) : null} onClick={ width <= 700 ? ()=>handlerHover(6) : null}>
                             {
-                                hover6 ? <h5>{Data.academic.programming.skills.others.SASS}%</h5> : <i className="fab fa-sass"></i>
+                                hover6 ? <h5>{Data.skills.others.SASS}%</h5> : <i className="fab fa-sass"></i>
                             }
                         </div>
                         <div className="loader-bar">
@@ -148,7 +148,7 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(7) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(7) : null} onClick={ width <= 700 ? ()=>handlerHover(7) : null}>
                             {
-                                hover7 ? <h5>0{Data.academic.programming.skills.Python}%</h5> : <i className="fab fa-python"></i>
+                                hover7 ? <h5>0{Data.skills.Python}%</h5> : <i className="fab fa-python"></i>
                             }
                         </div>
                         <div className="loader-bar">
@@ -163,7 +163,7 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(8) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(8) : null} onClick={ width <= 700 ? ()=>handlerHover(8) : null}>
                             {
-                                hover8 ? <h5>0{Data.academic.programming.skills.NodeJS}%</h5> : <i class="fab fa-node-js"></i>
+                                hover8 ? <h5>0{Data.skills.NodeJS}%</h5> : <i class="fab fa-node-js"></i>
                             }
                         </div>
                         <div className="loader-bar">
@@ -178,7 +178,7 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(9) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(9) : null} onClick={ width <= 700 ? ()=>handlerHover(9) : null}>
                             {
-                                hover9 ? <h5>0{Data.academic.programming.skills.MySQL}%</h5> : <i className="fas fa-server"></i>
+                                hover9 ? <h5>0{Data.skills.MySQL}%</h5> : <i className="fas fa-server"></i>
                             }
                         </div>
                         <div className="loader-bar">

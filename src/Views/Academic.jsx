@@ -1,7 +1,8 @@
+
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import ProfesionaInfoContext from '../Context/ProfesionalInfoContext'
-import { AcademicInfo } from '../components/AcademicInfo'
+import ProfesionaInfoContext from '../Context/ProfesionalInfoContext.jsx'
+import { AcademicInfo } from '../components/AcademicInfo.jsx'
 
 const Academic = () => {
 

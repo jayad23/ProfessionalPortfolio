@@ -64,7 +64,7 @@ export const Data = {
         {
             id: 1,
             degree:'Bachelor Degree in Education in Theology.',
-            institute:'Adventist Church',
+            institute:'Adventist University',
             online: false,
             status:true,
             yearOfCompletion:2011,
@@ -135,19 +135,19 @@ export const Data = {
             yearOfCompletion:2022
         },{
             id: 5,
+            degree:'REACT: TESTING AND DEBUGGING',
+            institute:'LinkedIn Academy',
+            online:true,
+            yearOfCompletion:2022
+        },{
+            id: 5,
             degree:'TAILWIND CSS ESSENTIAL TRAINING',
             institute:'LinkedIn Academy',
             online:true,
             yearOfCompletion:2022
         },{
-            id: 6,
-            degree:'TYPESCRIPT: OOP',
-            institute:'LinkedIn Academy',
-            online:true,
-            yearOfCompletion:2022
-        },{
             id: 7,
-            degree:'JS: CODE CHALENGES',
+            degree:'TYPESCRIPT: OOP',
             institute:'LinkedIn Academy',
             online:true,
             yearOfCompletion:2022
@@ -159,18 +159,24 @@ export const Data = {
             yearOfCompletion:2022
         },{
             id: 9,
+            degree:'JS: CODE CHALENGES',
+            institute:'LinkedIn Academy',
+            online:true,
+            yearOfCompletion:2022
+        },{
+            id: 10,
             degree:'GIT & GITHUB.',
             institute:'LinkedIn Academy',
             online:true,
             yearOfCompletion:2018
         },{
-            id: 10,
+            id: 11,
             degree:'WEB DEVELOPMENT',
             institute:'Platzi',
             online:true,
             yearOfCompletion:2017
         },{
-            id: 11,
+            id: 12,
             degree:'RESPONSIVE DESIGN',
             institute:'Platzi',
             online:true,
@@ -180,7 +186,7 @@ export const Data = {
     skills: {
         HTML5: 90,
         CSS: 90,
-        JavaScript: 60,
+        JavaScript: 75,
         React: 90,
         Angular: 10,
         NodeJS: 1,
