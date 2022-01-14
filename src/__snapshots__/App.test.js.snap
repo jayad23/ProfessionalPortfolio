@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapShot test 1`] = `
+<div>
+  <div
+    className="icon"
+  >
+    <i
+      className="far fa-envelope"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="container-home"
+  >
+    <div
+      className="home-image"
+    >
+      <img
+        alt=""
+        src="self.jpg"
+      />
+    </div>
+    <div
+      className="home-text"
+    >
+      <h3
+        onMouseEnter={[Function]}
+      >
+        Hello
+      </h3>
+      <h4>
+        I am Kike Vanegas
+      </h4>
+      <p>
+         
+        <b
+          className="text-iter styles_typicalWrapper__1_Uvh"
+        />
+      </p>
+    </div>
+    <aside
+      className="home-social"
+    >
+      <ul>
+        <li>
+          <a
+            className="fab fa-facebook-f"
+            href="https://www.facebook.com/kkvz23/"
+            rel="noreferrer"
+            target="_blank"
+          />
+        </li>
+        <li>
+          <a
+            className="fab fa-twitter"
+            href="https://twitter.com/KkVngz23"
+            rel="noreferrer"
+            target="_blank"
+          />
+        </li>
+        <li>
+          <a
+            className="fab fa-youtube"
+            href="https://www.youtube.com/channel/UCCzn5vab6xL1-Vwdzk8Meeg"
+            rel="noreferrer"
+            target="_blank"
+          />
+        </li>
+        <li>
+          <a
+            className="fab fa-linkedin"
+            href="https://www.linkedin.com/in/jaidervanegas23/"
+            rel="noreferrer"
+            target="_blank"
+          />
+        </li>
+        <li>
+          <a
+            className="fab fa-instagram"
+            href="https://www.instagram.com/kkvngz23/"
+            rel="noreferrer"
+            target="_blank"
+          />
+        </li>
+        <li>
+          <a
+            className="fab fa-whatsapp"
+            href="https://api.whatsapp.com/send?phone=573196149019&text=Hello, Kike. I am interested in your work..."
+            rel="noreferrer"
+            target="_blank"
+          />
+        </li>
+      </ul>
+    </aside>
+  </div>
+</div>
+`;
