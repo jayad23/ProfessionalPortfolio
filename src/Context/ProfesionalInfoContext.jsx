@@ -1,9 +1,9 @@
 import React, { createContext, useState, useEffect } from "react"
 import { Data } from "../DataStore/Data"
 
-const ProfesionaInfoContext = createContext() //esto es el contexto
+const ProfesionaInfoContext = createContext();
 
-const ProfesionalProvider = ({children}) => { //esto es el componente proveedor
+const ProfesionalProvider = ({children}) => { 
     
     const [ showIcon, setShowIcon ] = useState(false)
 

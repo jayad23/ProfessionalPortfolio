@@ -1,6 +1,5 @@
 import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
-import '../Styles/About.css'
 import ProfesionaInfoContext from '../Context/ProfesionalInfoContext'
 
 const About = () => {

@@ -1,5 +1,4 @@
 import React from 'react'
-
 const LibraryOthers = () => {
     return (
         <div className="section-flip">

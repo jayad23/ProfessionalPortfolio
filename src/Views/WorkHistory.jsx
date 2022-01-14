@@ -1,8 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../Styles/WorkHistory.css'
 import ProfesionalInfoContext from '../Context/ProfesionalInfoContext'
-
 import RenderCard from '../components/RenderCard'
 import Loader from '../components/Loader'
 
@@ -12,6 +10,7 @@ const WorkHistory = () => {
 
     setTimeout(() => {
         setLoader(true)
+        console.log("it's been 4 seconds already")
     }, 4000);
 
     return (
@@ -37,7 +36,7 @@ const WorkHistory = () => {
             }
             <h1>Work History</h1> 
            </div>
-            <Link to="/about" className="back"><i class="fas fa-arrow-left"></i></Link>
+            <Link to="/about" className="back"><i className="fas fa-arrow-left"></i></Link>
         </div>
     )
 }
