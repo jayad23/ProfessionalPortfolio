@@ -1,5 +1,5 @@
 import React from "react";
-
+//BlogPosts
 export const BlogPosts = ({ id, title, link })=>{
     return (
         <>
