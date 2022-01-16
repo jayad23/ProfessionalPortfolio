@@ -2,7 +2,7 @@ import React from 'react'
 const LibraryTailwind = () => {
     return (
         <div className="section-flip">
-            <div className="section-flip-image-ht">
+            <div className="section-flip-image">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" alt="" />
             </div>
             <div className="section-flip-text">

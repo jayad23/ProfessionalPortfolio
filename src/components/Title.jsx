@@ -6,7 +6,7 @@ const Title = () =>{
     <div className="title">
       <h1>
         <Bounce left cascade>
-          S K I L L S
+          Licenses & Certifications
         </Bounce>
       </h1>
     </div>
