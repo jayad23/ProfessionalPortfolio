@@ -2,7 +2,7 @@ import React from 'react'
 const LibraryJs = () => {
     return (
         <div className="section-flip">
-            <div className="section-flip-image">
+            <div className="section-flip-image-js">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" alt="" />
             </div>
             <div className="section-flip-text">

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import PersonalInfoContext from '../Context/ProfesionalInfoContext'
 import Title from '../components/Title'
 import AdditionalText from '../components/AdditionalText'
@@ -7,7 +7,7 @@ import AdditionalText from '../components/AdditionalText'
 const Skills = () => {
 
     const { Data, width } = useContext(PersonalInfoContext)
-
+    const navigate = useNavigate()
     const [hover1, setHover1] = useState(false)
     const [hover2, setHover2] = useState(false)
     const [hover3, setHover3] = useState(false)
@@ -55,6 +55,7 @@ const Skills = () => {
         <div className="container-skills">
             <Title/>
             <div className='square'>
+            <button className='btn-blog' onClick={()=> navigate('/blog')}>Visit my Blog</button>
                     <div className="square-row">
                         <div className="row-icon" onMouseEnter={ width > 700 ? ()=>handlerHover(1) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(1) : null} onClick={ width <= 700 ? ()=>handlerHover(1) : null}>
                             {
@@ -118,26 +119,11 @@ const Skills = () => {
                     <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(5) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(5) : null} onClick={ width <= 700 ? ()=>handlerHover(5) : null}>
                             {
-                                hover5 ? <h5>{Data.skills.others.Tailwind}%</h5> : <i className="fas fa-border-style"></i>
+                                hover5 ? <h5>{Data.skills.typescript}%</h5> : <i className="far fa-keyboard"></i>
                             }
                         </div>
                         <div className="loader-bar">
-                            <span className={hover5 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "50%"}}>
-                                
-                            </span>
-                        </div>
-                        <div className="bar-percent">
-                            <h5>100%</h5>
-                        </div>
-                    </div>
-                    <div className="square-row">
-                        <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(6) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(6) : null} onClick={ width <= 700 ? ()=>handlerHover(6) : null}>
-                            {
-                                hover6 ? <h5>{Data.skills.others.SASS}%</h5> : <i className="fab fa-sass"></i>
-                            }
-                        </div>
-                        <div className="loader-bar">
-                            <span className={hover6 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight: "50%"}}>
+                            <span className={hover5 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight:"40%"}}>
                                 
                             </span>
                         </div>
@@ -196,8 +182,7 @@ const Skills = () => {
                 js = {hover2}
                 css = {hover3}
                 html5 = {hover4}
-                tailwind = {hover5}
-                sass = {hover6}
+                typescript = {hover5}
                 python = {hover7}
                 node = {hover8}
                 MySQL = {hover9}

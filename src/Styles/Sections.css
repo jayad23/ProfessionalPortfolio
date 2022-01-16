@@ -4,8 +4,8 @@
 }
 
 .section-flip-image{
-    width: 8.2rem;
-    height: 7rem;
+    width: 9.3rem;
+    height: 8.5rem;
 }
 
 .section-flip-image > img{
@@ -13,7 +13,18 @@
     height: 100%;
 }
 
+.section-flip-image-js{
+    width: 9rem;
+    height: 9rem;
+}
+
+.section-flip-image-js > img{
+    width: 100%;
+    height: 100%;
+}
+
 .section-flip-image-css{
+    margin-left: 1rem;
     width: 7rem;
     height: 10rem;
 }
@@ -34,9 +45,8 @@
     height: 100%;
 }
 
-.section-flip-text > p > span{
-    border-bottom: 2px solid rgb(219, 14, 55);
-    font-weight: bolder;
+.section-flip-text-css{
+   margin-left: 1rem;   
 }
 
 .section-flip-text > h1{

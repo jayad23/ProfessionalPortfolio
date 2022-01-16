@@ -192,10 +192,10 @@ export const Data = {
         NodeJS: 1,
         Python: 1,
         MySQL: 1,
+        typescript: 60,
         others : {
             bootstrap: 15,
-            SASS: 50,
-            Tailwind: 50
+            SASS: 50
         }
     },
     languages:[
@@ -290,6 +290,13 @@ export const Data = {
             url1:'https://project-ecommercce-46cdhwtei-jayad23.vercel.app/',
             url2:'https://github.com/jayad23/projectEcommerce.git',
             image: image7
+        }
+    ],
+    blogPosts:[
+        {
+            id: 1,
+            title:'The Inadvertent Wall of Programming.',
+            linkTo:'https://www.linkedin.com/pulse/inadvertent-wall-programming-jaider-e-vanegas-p-/?trackingId='
         }
     ]
 }
