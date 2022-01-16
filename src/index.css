@@ -9,6 +9,7 @@
 @import url('./Styles/Skills.css');
 @import url('./Styles/SkillsTitle.css');
 @import url('./Styles/WorkHistory.css');
+@import url('./Styles/blogPosts.styles.css');
 
 body {
   margin: 0;

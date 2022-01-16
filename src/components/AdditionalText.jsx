@@ -5,11 +5,10 @@ import LibraryJs from './LibraryJs'
 import LibraryOthers from './LibraryOthers'
 import LibraryCss from './LibraryCss'
 import LibraryHTML5 from './LibraryHTML5'
-import LibraryTailwind from './LibraryTailwind'
-import LibrarySASS from './LibrarySASS'
+import LibraryTypescript from './LibraryTypescript'
 
 
-const AdditionalText = ({ react, js, css, html5, tailwind, sass, python, node, MySQL }) => {
+const AdditionalText = ({ react, js, css, html5, typescript, python, node, MySQL }) => {
   
   return (
     <div className="additionalText">
@@ -50,19 +49,10 @@ const AdditionalText = ({ react, js, css, html5, tailwind, sass, python, node, M
         : null
       }
       {
-        tailwind ?
+        typescript ?
         <Flip right>
           <div className='additionalText-Subcontainer'>
-              <LibraryTailwind/>
-          </div>
-        </Flip>
-        : null
-      }
-      {
-        sass ?
-        <Flip right>
-          <div className='additionalText-Subcontainer'>
-              <LibrarySASS/>
+              <LibraryTypescript/>
           </div>
         </Flip>
         : null

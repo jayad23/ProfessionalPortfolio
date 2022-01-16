@@ -7,7 +7,18 @@ const LibraryJs = () => {
             </div>
             <div className="section-flip-text">
                 <h1>JavaScript</h1>
-                <p>While learning JavaScript, I solved a series of problems that enabled me to understand basic concepts of JS as well as methods used to organzing and setting data behaviour. Though is a long way to finally master this wide complex tool, I do feel comfortable to use it on day-to-day work in a professional level.</p>
+                <ul className="skills-list-section">
+                    <li className="skills-list">
+                        <span>Object Oriented Programming</span>
+                        <span>December 2021</span>
+                        <span>LinkedIn</span>
+                    </li>
+                    <li className="skills-list">
+                        <span>JS: Coding Challenge</span>
+                        <span>December 2021</span>
+                        <span>LinkedIn</span>
+                    </li>
+                </ul>
             </div>
         </div>
     )
