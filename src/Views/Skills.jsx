@@ -132,6 +132,21 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="square-row">
+                        <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(6) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(6) : null} onClick={ width <= 700 ? ()=>handlerHover(6) : null}>
+                            {
+                                hover6 ? <h5>{Data.skills.responsive}%</h5> : <i className="fas fa-ruler-combined"></i>
+                            }
+                        </div>
+                        <div className="loader-bar">
+                            <span className={hover6 ? 'loader-effect animation' : 'loader-effect'} style={{marginRight:"15%"}}>
+                                
+                            </span>
+                        </div>
+                        <div className="bar-percent">
+                            <h5>100%</h5>
+                        </div>
+                    </div>
+                    <div className="square-row">
                         <div className="row-icon"  onMouseEnter={ width > 700 ? ()=>handlerHover(7) : null} onMouseLeave={ width > 700 ? ()=>handlerHover(7) : null} onClick={ width <= 700 ? ()=>handlerHover(7) : null}>
                             {
                                 hover7 ? <h5>0{Data.skills.Python}%</h5> : <i className="fab fa-python"></i>
@@ -182,6 +197,7 @@ const Skills = () => {
                 js = {hover2}
                 css = {hover3}
                 html5 = {hover4}
+                responsive = {hover6}
                 typescript = {hover5}
                 python = {hover7}
                 node = {hover8}

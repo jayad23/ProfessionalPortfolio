@@ -93,7 +93,7 @@ export const Data = {
             degree:'Full-Stack Software Development & Computer Science.',
             institute:'Academlo',
             online:true,
-            status:'In Progress.',
+            status:false,
             yearOfCompletion:2022,
             yearsInTotal:1,
             icon:'fas fa-certificate'
@@ -102,7 +102,8 @@ export const Data = {
             degree:'Front-End Development.',
             institute:'Udemy',
             online:true,
-            yearOfCompletion:2020,
+            status:true,
+            yearOfCompletion:2021,
             yearsInTotal:1,
             icon:'fas fa-certificate'
         }
@@ -166,7 +167,7 @@ export const Data = {
         },{
             id: 10,
             degree:'GIT & GITHUB.',
-            institute:'LinkedIn Academy',
+            institute:'Platzi',
             online:true,
             yearOfCompletion:2018
         },{
@@ -193,6 +194,7 @@ export const Data = {
         Python: 1,
         MySQL: 1,
         typescript: 60,
+        responsive: 85,
         others : {
             bootstrap: 15,
             SASS: 50

@@ -6,9 +6,10 @@ import LibraryOthers from './LibraryOthers'
 import LibraryCss from './LibraryCss'
 import LibraryHTML5 from './LibraryHTML5'
 import LibraryTypescript from './LibraryTypescript'
+import LibraryResponsive from './LibraryResponsive'
 
 
-const AdditionalText = ({ react, js, css, html5, typescript, python, node, MySQL }) => {
+const AdditionalText = ({ react, js, css, html5, responsive, typescript, python, node, MySQL }) => {
   
   return (
     <div className="additionalText">
@@ -53,6 +54,15 @@ const AdditionalText = ({ react, js, css, html5, typescript, python, node, MySQL
         <Flip right>
           <div className='additionalText-Subcontainer'>
               <LibraryTypescript/>
+          </div>
+        </Flip>
+        : null
+      }
+      {
+        responsive ?
+        <Flip right>
+          <div className='additionalText-Subcontainer'>
+              <LibraryResponsive/>
           </div>
         </Flip>
         : null
