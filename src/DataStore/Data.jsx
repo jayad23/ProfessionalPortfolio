@@ -297,6 +297,10 @@ export const Data = {
             id: 1,
             title:'The Inadvertent Wall of Programming.',
             linkTo:'https://www.linkedin.com/pulse/inadvertent-wall-programming-jaider-e-vanegas-p-/?trackingId='
+        },{
+            id: 2,
+            title:'¿Qué es, y cómo usar Redux con React Js?',
+            linkTo:'https://www.linkedin.com/pulse/how-set-up-redux-react-js-jaider-e-vanegas-p-'
         }
     ]
 }
