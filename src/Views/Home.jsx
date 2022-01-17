@@ -21,7 +21,7 @@ const Home = () => {
             </div>  
             <div className='home-text'>
                 {
-                    width > 500 ?
+                    width > 1000 ?
                     mount ?
                     <h3 onMouseLeave={handleMount}
                         onClick={()=> navigate('/about')}
@@ -41,7 +41,7 @@ const Home = () => {
                                 loop={Infinity}
                                 wrapper='b'
                                 steps={[
-                                    `${width > 500 ? 'Hover' : 'Touch'} over ${width > 500 ? 'Hello' : 'Start'}`,
+                                    `${width > 1000 ? 'Hover' : 'Touch'} over ${width > 1000 ? 'Hello' : 'Start'}`,
                                         2000,
                                     'I am a web developer',
                                         1000,

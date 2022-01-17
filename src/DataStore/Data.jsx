@@ -295,7 +295,7 @@ export const Data = {
     blogPosts:[
         {
             id: 1,
-            title:'The Inadvertent Wall of Programming.',
+            title:'The Inadvertent Wall of Programming',
             linkTo:'https://www.linkedin.com/pulse/inadvertent-wall-programming-jaider-e-vanegas-p-/?trackingId='
         },{
             id: 2,

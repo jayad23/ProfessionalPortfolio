@@ -1,13 +1,18 @@
 .container-posts{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
     flex-wrap: wrap;
-
+    background-color: rgb(5, 4, 73);
 }
 
 .posts-container{
-    width: 40%;
+    width: 30%;
+    height: 10%; 
     padding: 1rem;
     background: #AF47CE;
     background: -moz-linear-gradient(-45deg, #AF47CE 0%, #2C98A4 44%, #5040C5 100%);
@@ -35,4 +40,11 @@
     font-family: 'Oswald', sans-serif;
     color: rgb(248, 232, 6);
     text-decoration: none;
+}
+
+@media screen and (max-width: 494px) {
+    .posts-container{
+        width: 100%;
+    
+    }
 }

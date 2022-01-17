@@ -23,6 +23,16 @@
     height: 100%;
 }
 
+.section-flip-image-ts{
+    width: 9rem;
+    height: 9rem;
+}
+
+.section-flip-image-ts > img{
+    width: 100%;
+    height: 100%;
+}
+
 .section-flip-image-css{
     margin-left: 1rem;
     width: 7rem;
@@ -61,4 +71,12 @@
 
 .skills-list > span:first-child{
     font-weight: bolder;
+}
+
+@media screen and (max-width: 356px) {
+    .section-flip-image-ts{
+        width: 13rem;
+        height: 9rem;
+    }
+    
 }

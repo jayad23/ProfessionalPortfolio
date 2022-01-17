@@ -2,7 +2,7 @@ import React from 'react'
 const LibraryTypescript = () => {
     return (
         <div className="section-flip">
-            <div className="section-flip-image-js">
+            <div className="section-flip-image-ts">
                 <img src="https://iconape.com/wp-content/png_logo_vector/typescript.png" alt="" />
             </div>
             <div className="section-flip-text">
