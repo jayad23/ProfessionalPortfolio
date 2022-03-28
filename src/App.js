@@ -17,10 +17,7 @@ import { Blog } from "./Views/Blog";
 import { ProfesionalProvider } from "./Context/ProfesionalInfoContext";
 import Academic from "./Views/Academic";
 
-
-
 function App() {
- 
   return (
     <BrowserRouter>
       <ProfesionalProvider>

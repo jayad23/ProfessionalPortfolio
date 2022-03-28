@@ -1,83 +1,85 @@
-import React from 'react'
-import { Flip } from 'react-reveal'
-import LibraryReact from './LibraryReact'
-import LibraryJs from './LibraryJs'
-import LibraryOthers from './LibraryOthers'
-import LibraryCss from './LibraryCss'
-import LibraryHTML5 from './LibraryHTML5'
-import LibraryTypescript from './LibraryTypescript'
-import LibraryResponsive from './LibraryResponsive'
+import React from "react";
+import { Flip } from "react-reveal";
+import LibraryReact from "./LibraryReact";
+import LibraryJs from "./LibraryJs";
+import LibraryOthers from "./LibraryOthers";
+import LibraryCss from "./LibraryCss";
+import LibraryHTML5 from "./LibraryHTML5";
+import LibraryTypescript from "./LibraryTypescript";
+import LibraryResponsive from "./LibraryResponsive";
+import LibraryNode from "./LibraryNode";
 
-
-const AdditionalText = ({ react, js, css, html5, responsive, typescript, python, node, MySQL }) => {
-  
+const AdditionalText = ({
+  react,
+  js,
+  css,
+  html5,
+  responsive,
+  typescript,
+  python,
+  node,
+  MySQL,
+}) => {
   return (
-    <div className="additionalText">
-      {
-        react ?
+    <div className='additionalText'>
+      {react ? (
         <Flip right>
           <div className='additionalText-Subcontainer'>
-              <LibraryReact/>
+            <LibraryReact />
           </div>
         </Flip>
-        : null
-      }
-      {
-        js ?
+      ) : null}
+      {js ? (
         <Flip right>
           <div className='additionalText-Subcontainer'>
-              <LibraryJs/>
+            <LibraryJs />
           </div>
         </Flip>
-        : null
-      }
-      {
-        css ?
+      ) : null}
+      {css ? (
         <Flip right>
           <div className='additionalText-Subcontainer'>
-              <LibraryCss/>
+            <LibraryCss />
           </div>
         </Flip>
-        : null
-      }
-      {
-        html5 ?
+      ) : null}
+      {html5 ? (
         <Flip right>
           <div className='additionalText-Subcontainer'>
-              <LibraryHTML5/>
+            <LibraryHTML5 />
           </div>
         </Flip>
-        : null
-      }
-      {
-        typescript ?
+      ) : null}
+      {typescript ? (
         <Flip right>
           <div className='additionalText-Subcontainer'>
-              <LibraryTypescript/>
+            <LibraryTypescript />
           </div>
         </Flip>
-        : null
-      }
-      {
-        responsive ?
+      ) : null}
+      {responsive ? (
         <Flip right>
           <div className='additionalText-Subcontainer'>
-              <LibraryResponsive/>
+            <LibraryResponsive />
           </div>
         </Flip>
-        : null
-      }
-      {
-        node || python || MySQL ?
+      ) : null}
+      {node ? (
         <Flip right>
           <div className='additionalText-Subcontainer'>
-              <LibraryOthers/>
+            <LibraryNode />
           </div>
         </Flip>
-        : null
-      }
+      ) : null}
+      {python || MySQL ? (
+        <Flip right>
+          <div className='additionalText-Subcontainer'>
+            <LibraryOthers />
+          </div>
+        </Flip>
+      ) : null}
     </div>
-  )
-}
+  );
+};
 
-export default AdditionalText
+export default AdditionalText;
