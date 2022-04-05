@@ -43,7 +43,9 @@ const Skills = () => {
     <div className='container-skills'>
       <Title />
       <div className='square'>
-        <button className='btn-blog' onClick={() => navigate("/blog")}>
+        <button
+          className='btn-blog'
+          onClick={() => navigate("/about/skills/blog")}>
           Visit my Blog
         </button>
         <div className='square-row'>

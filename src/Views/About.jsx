@@ -16,9 +16,9 @@ const About = () => {
         </p>
       </div>
       <div className='history-container'>
-        <Link to='/academic'>Academic Information</Link>
-        <Link to='/workhistory'>Work History</Link>
-        <Link to='/skills'>Skills</Link>
+        <Link to='/about/academic'>Academic Information</Link>
+        <Link to='/about/workhistory'>Work History</Link>
+        <Link to='/about/skills'>Skills</Link>
         <a href={Data.images.CV} download='Jaider Vanegas CV '>
           Resume
         </a>

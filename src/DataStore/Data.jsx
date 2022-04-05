@@ -111,6 +111,22 @@ export const Data = {
     },
   ],
   certifications: {
+    logos: {
+      react:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+      js: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+      styles:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+      html: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png",
+      ts: "https://iconape.com/wp-content/png_logo_vector/typescript.png",
+      tools:
+        "https://i.pinimg.com/originals/ef/2b/c5/ef2bc5fb80c9435d9b04989fa2c0ecf1.gif",
+      node: "https://midu.dev/images/tags/node.png",
+      py: "",
+      db: "",
+      default:
+        "https://c.tenor.com/ZrFooc6A9ysAAAAM/goodgoodgeneral-mental-health.gif",
+    },
     react: [
       {
         id: 1,
@@ -147,6 +163,123 @@ export const Data = {
         title: "React & Redux with TypeScript",
         date: "January 2022",
         institute: "LinkedIn Learning",
+      },
+    ],
+    javascript: [
+      {
+        id: 1,
+        title: "Object Oriented Programming",
+        date: "December 2021",
+        institute: "LinkedIn Learning",
+      },
+      {
+        id: 2,
+        title: "Coding Challenge",
+        date: "December 2021",
+        institute: "LinkedIn Learning",
+      },
+    ],
+    styles: [
+      {
+        id: 1,
+        title: "Animation with CSS",
+        date: "January 2021",
+        institute: "LinkedIn Learning",
+      },
+      {
+        id: 2,
+        title: "Tailwind CSS Essencial Training",
+        date: "January 2021",
+        institute: "LinkedIn Learning",
+      },
+      {
+        id: 3,
+        title: "Bootstrap",
+        date: "October 2021",
+        institute: "YouTube Tutorials",
+      },
+      {
+        id: 4,
+        title: "SASS",
+        date: "August 2021",
+        institute: "YouTube Tutorials",
+      },
+    ],
+    html: [
+      {
+        id: 1,
+        title: "Creating Responsive HTML Email",
+        date: "February 2022",
+        institute: "LinkedIn Learning",
+      },
+      {
+        id: 2,
+        title: "Essencial Training",
+        date: "November 2020",
+        institute: "YouTube Tutorials",
+      },
+      {
+        id: 3,
+        title: "Basic HTML",
+        date: "September 2017",
+        institute: "YouTube Tutorials",
+      },
+    ],
+    typescript: [
+      {
+        id: 1,
+        title: "OOP with Typescript",
+        date: "January 2022",
+        institute: "LinkedIn Learning",
+      },
+      {
+        id: 2,
+        title: "React, Redux & Typescript",
+        date: "December 2021",
+        institute: "LinkedIn Learning",
+      },
+      {
+        id: 3,
+        title: "The Complete Professional Guide",
+        date: "November 2021",
+        institute: "UDEMY",
+      },
+    ],
+    tools: [
+      {
+        id: 1,
+        title: "Git & GitHub",
+        date: "February 2018",
+        institute: "Platzi Academy",
+      },
+      {
+        id: 2,
+        title: "Web Development",
+        date: "November 2017",
+        institute: "Platzi Academy",
+      },
+      {
+        id: 3,
+        title: "Responsive Design",
+        date: "October 2017",
+        institute: "Platzi Academy",
+      },
+    ],
+    node: [],
+    py_thon: [
+      {
+        id: 1,
+        title: "Python",
+        date: "In progress...",
+        institute: "This technology will be acquired very soon",
+      },
+    ],
+    dataBase: [
+      {
+        id: 1,
+        title: "MySQL",
+        date: "In progress...",
+        institute: "This technology will be acquired very soon",
       },
     ],
   },

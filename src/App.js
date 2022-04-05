@@ -19,21 +19,22 @@ import Academic from "./Views/Academic";
 
 function App() {
   return (
-    <BrowserRouter>
-      <ProfesionalProvider>
+    <ProfesionalProvider>
+      <BrowserRouter>
         <MainLayOut>
           <Routes>
             <Route path="/" exact element={<Home/>}/>
             <Route path="/about" exact element={<About/>}/>
-            <Route path="/academic" exact element={<Academic/>}/>
-            <Route path="/workhistory" exact element={<WorkHistory/>}/>
-            <Route path="/skills" exact element={<Skills/>}/>
-            <Route path="/blog" exact element={<Blog/>}/>
+            <Route path="/about/academic" exact element={<Academic/>}/>
+            <Route path="/about/workhistory" exact element={<WorkHistory/>}/>
+            <Route path="/about/skills" exact element={<Skills/>}/>
+            <Route path="/about/skills/blog" exact element={<Blog/>}/>
             <Route path="/contact" exact element={<Form/>}/>
           </Routes>
         </MainLayOut>
-      </ProfesionalProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ProfesionalProvider>
+    
   );
  
 }

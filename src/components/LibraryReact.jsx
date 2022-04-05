@@ -5,10 +5,7 @@ const LibraryReact = () => {
   return (
     <div className='section-flip'>
       <div className='section-flip-image'>
-        <img
-          src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png'
-          alt='react_logo'
-        />
+        <img src={Data.certifications.logos.react} alt='react_logo' />
       </div>
       <div className='section-flip-text'>
         <h1>React JS</h1>

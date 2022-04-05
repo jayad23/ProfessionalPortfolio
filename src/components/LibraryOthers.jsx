@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
+import ProfessionalInfoContext from "../Context/ProfesionalInfoContext";
 const LibraryOthers = () => {
+  const { Data } = useContext(ProfessionalInfoContext);
   return (
     <div className='section-flip'>
       <div className='section-flip-image'>
-        <img
-          src='https://c.tenor.com/ZrFooc6A9ysAAAAM/goodgoodgeneral-mental-health.gif'
-          alt='config_logo'
-        />
+        <img src={Data.certifications.logos.default} alt='config_logo' />
       </div>
       <div className='section-flip-text'>
-        <h1>In Progress...</h1>
-        <p>This technology will be acquired very soon</p>
+        <ul className='skills-list-section'>
+          {Data.certifications.typescript?.map((item) => (
+            <li className='skills-list' key={item.id}>
+              <span>{item.title}</span>
+              <span>{item.date}</span>
+              <span>{item.institute}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
