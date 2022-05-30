@@ -9,7 +9,7 @@ import Text1T1 from "../imgs/TextH1B.png";
 import Text1T2 from "../imgs/TextH2W.png";
 import Text2T1 from "../imgs/TextV1B.png";
 import Text2T2 from "../imgs/TextV2W.png";
-import CV from "../CV/RESUME.pdf";
+import CV from "../CV/JAIDER_VANEGAS.pdf";
 
 //Images of Projects
 import image1 from "../imgs/1.png";
